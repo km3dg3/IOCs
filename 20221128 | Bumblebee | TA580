@@ -1,0 +1,79 @@
+TA580 | Bumblebee | 28 November 2022
+Reference: https://twitter.com/k3dg3/status/1597293546889187329
+Sample: https://bazaar.abuse.ch/sample/111884defe575650260a2eaab6c0fc2a3ebd3fbe4a9bf75bb56944a13f0aa009/
+Sandbox: https://tria.ge/221128-wpcjvaec79/behavioral2
+
+
+TLDR Process Tree Example:
+--------------------------
+C:\Windows\system32\cmd.exe
+cmd /c C:\Users\Admin\AppData\Local\Temp\2513512.lnk
+
+C:\Windows\system32\cmd.exe
+cmd /c "C:\Users\Admin\AppData\Local\Temp\navbar.bat"
+
+
+C:\Windows\system32\cmd.exe
+C:\Windows\system32\cmd.exe  /K copy  /y /b C:\Windows\System32\rundll32.exe C:\ProgramData\YxurWe0fMb8Vi.exe 
+
+
+C:\Windows\system32\xcopy.exe
+xcopy  /h /y taxonomy.dll C:\ProgramData 
+
+
+C:\Windows\system32\schtasks.exe
+SCHTASKS  /create /tn "UpdateService" /tr "cmd.exe /c C:\programdata\YxurWe0fMb8Vi.exe C:\programdata\taxonomy.dll,cmfgutil"  /sc hourly /mo 1 /sd 01/01/2022 /st 00:00 
+
+
+C:\Windows\system32\taskkill.exe
+taskkill  /F /im cmd.exe
+
+
+
+IOCs
+--------------------------
+Example Bumblebee Configuration:
+
+C2: 115.173.169.158:345
+C2: 189.255.203.220:169
+C2: 50.177.163.177:183
+C2: 108.62.118.70:443
+C2: 234.242.198.53:104
+C2: 46.142.126.65:146
+C2: 66.29.212.202:339
+C2: 101.159.240.254:214
+C2: 132.71.97.234:133
+C2: 116.173.91.85:208
+C2: 157.66.130.129:435
+C2: 163.19.75.193:471
+C2: 122.96.217.236:101
+C2: 104.147.217.172:154
+C2: 3.144.8.173:134
+C2: 123.132.176.82:329
+C2: 104.219.233.41:443
+C2: 200.118.151.2:458
+C2: 23.196.89.183:269
+C2: 244.228.176.210:328
+C2: 218.208.107.183:367
+C2: 73.67.110.165:218
+C2: 102.99.60.214:219
+C2: 172.86.141.104:330
+C2: 168.215.225.71:373
+C2: 90.105.250.5:263
+C2: 19.94.230.8:363
+C2: 199.6.117.31:153
+C2: 132.44.87.255:490
+C2: 142.11.199.235:443
+C2: 26.152.154.172:206
+C2: 203.167.67.216:319
+C2: 0.49.42.137:400
+Group ID: 2811
+RC4 Key: eCUmnQerTx
+
+Bumblebee Hash Example
+sha256s
+95a37ee707f673e561f3a8dbb27927f7140b8541c12eb805bf47613adc36b584
+
+
+
+URLs in Email body via SMASH
