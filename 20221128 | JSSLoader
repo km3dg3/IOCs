@@ -1,4 +1,7 @@
 TA543 | JSSLoader | 28 November 2022
+Reference: https://twitter.com/k3dg3/status/1597302495810056194
+Sample: https://bazaar.abuse.ch/sample/029ba8e51e355e4969b28173a48ea34dab9452139dbac2cce46010da07ed9835/
+Sandbox: https://tria.ge/221128-xcxjxscc81/behavioral2
 
 
 
@@ -37,3 +40,7 @@ https://sanantonioammoco.com/reports/posted.djvu
 POST Traffic
 urls
 https://scriptureonpicture.com/?utm_source=[redacted]
+
+Example URLs in email body:
+https://mailtrain.faceprep.in/links/ohm3S_W7A/JLHxb7CyN/[various]/HhiOXJ_I4
+https://mailtrain.siap.id/links/cPPpXoNfN/cRGY7fKqT/[various]/04Td3chMd
