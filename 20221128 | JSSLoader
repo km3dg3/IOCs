@@ -1,0 +1,35 @@
+TLDR Process Tree Example:
+--------------------------
+C:\Windows\System32\WScript.exe
+"C:\Windows\System32\WScript.exe" "C:\Users\Admin\AppData\Local\Temp\KEM Business Solutions.wsf"
+
+C:\Users\Admin\AppData\Local\Temp\A391D8-8374-AC0901-A5DF64345CE\DolbyAudio.exe
+C:\Users\Admin\AppData\Local\Temp\A391D8-8374-AC0901-A5DF64345CE\DolbyAudio.exe
+
+C:\Windows\system32\systeminfo.exe
+"C:\Windows\system32\systeminfo.exe"
+
+C:\Windows\system32\ipconfig.exe
+"C:\Windows\system32\ipconfig.exe" /all
+
+
+
+IOCs
+--------------------------
+Landing Page
+domains
+scrivle.com
+jamlac.com
+urls
+https://scrivle.com/t/scs-v1-[redacted]
+https://jamlac.com/t/scs-v1-[redacted]
+
+WSF Payload
+sha256s
+7726a42419628a22758ab04c5122532fd06a32a4eae4d1e60d8562b88a542541
+urls
+https://sanantonioammoco.com/reports/posted.djvu
+
+POST Traffic
+urls
+https://scriptureonpicture.com/?utm_source=[redacted]
