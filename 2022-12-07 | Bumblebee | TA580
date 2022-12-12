@@ -1,0 +1,64 @@
+Bumblebee "0712" | URLs | "eCUmnQerTx" | 7 - 8 December 2022
+
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+Bumblebee
+
+---------------------------------------------------------------
+Threat Actor
+---------------------------------------------------------------
+TA580
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+Bumblebee Hash Example:
+ type: payload
+ sha256s:
+ - f70cbdde53a4bacee3410caf7666f303e6958f8d1d0fb678afbfa1093e38b4cb
+
+Bumblebee C2:
+ type: c2
+ ips:
+ - 192.254.79.122:443
+ - 139.177.146.25:443
+ - 104.219.233.145:443
+
+---------------------------------------------------------------
+Description
+---------------------------------------------------------------
+Messages purporting to be from (examples):
+
+- WeTransfer <noreply@wetransfer.com&gt;
+- Smash <noreply@fromsmash.com&gt;
+
+password (12/7): "p27841"
+
+
+The email from the hosting service contains a URL which leads to the download of a password-protected zip containing an IMG-file. The IMG contains a shortcut, a bat-file and a DLL. The shortcut will run the bat that will copy rundll32.exe and the DLL to C:\ProgramData, and then create a scheduled task that will run the DLL via the copied rundll32.exe.
+
+
+Example Process Tree (12/7 example):
+<pre>C:\Windows\system32\cmd.exe
+cmd /c C:\Users\Admin\AppData\Local\Temp\document01.lnk
+ 
+C:\Windows\System32\cmd.exe
+"C:\Windows\System32\cmd.exe" /c Page.bat
+ 
+C:\Windows\system32\cmd.exe
+C:\Windows\system32\cmd.exe  /K copy  /y /b C:\Windows\System32\rundll32.exe C:\ProgramData\aMq7gB3fPYTY.exe 
+ 
+C:\Windows\system32\xcopy.exe
+xcopy  /h /y aboutUs.dll C:\ProgramData 
+ 
+C:\ProgramData\aMq7gB3fPYTY.exe
+C:\ProgramData\aMq7gB3fPYTY.exe  C:\ProgramData\aboutUs.dll,CoReadNode 
+ 
+C:\Windows\system32\schtasks.exe
+SCHTASKS  /create /tn "AppSelect" /f /tr "cmd.exe /c C:\programdata\aMq7gB3fPYTY.exe C:\programdata\aboutUs.dll,CoReadNode"  /sc hourly /mo 1 /sd 01/01/2022 /st 00:00 
+ 
+C:\Windows\system32\taskkill.exe
+taskkill  /F /im cmd.exe</pre>
