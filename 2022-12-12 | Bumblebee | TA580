@@ -1,0 +1,61 @@
+Bumblebee "1212" | URLs | "eCUmnQerTx" | 12 December 2022
+sample: https://bazaar.abuse.ch/sample/645ee27f510d39c58276a251ca1a4c361d06ed8d0ec6b2a548b36246991a7612/
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+Bumblebee
+
+---------------------------------------------------------------
+Threat Actor
+---------------------------------------------------------------
+TA580
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+Bumblebee Hash Example:
+ type: payload
+ sha256s:
+ - c1b30ac4731197caf0ee49c76a9df568d53b630423f8a667417cad42b18d576b
+
+Bumblebee C2:
+ type: c2
+ ips:
+ - 146.70.100.126:443
+ - 149.3.170.211:443
+ - 103.144.139.137:443
+ - 85.239.54.178:443
+ - 139.177.146.26:443
+ urls:
+ - https://146.70.100.126/gatew
+
+---------------------------------------------------------------
+Description
+---------------------------------------------------------------
+Smash / WeTranfer URLs -> password protected zip -> IMG -> LNK -> BAT -> DLL
+
+Zip Password: password: "8268D"
+
+Example Process Tree:
+<pre>C:\Windows\system32\cmd.exe
+cmd /c C:\Users\Admin\AppData\Local\Temp\doc.lnk
+ 
+C:\Windows\System32\cmd.exe
+"C:\Windows\System32\cmd.exe" /c share.bat
+ 
+C:\Windows\system32\cmd.exe
+C:\Windows\system32\cmd.exe  /K copy  /y /b C:\Windows\System32\rundll32.exe C:\ProgramData\2PW9sUi9sE.exe 
+ 
+C:\Windows\system32\xcopy.exe
+xcopy  /h /y strona_16.dll C:\ProgramData 
+
+C:\ProgramData\2PW9sUi9sE.exe
+"C:\ProgramData\2PW9sUi9sE.exe"  C:\ProgramData\strona_16.dll,SetVPACon 
+ 
+C:\Windows\system32\schtasks.exe
+SCHTASKS  /create /tn "SetConnect" /f /tr "cmd.exe /c C:\programdata\2PW9sUi9sE.exe C:\programdata\strona_16.dll,SetVPACon"  /sc hourly /mo 1 /sd 01/01/2022 /st 00:00 
+ 
+C:\Windows\system32\taskkill.exe
+taskkill  /F /im cmd.exe</pre>
