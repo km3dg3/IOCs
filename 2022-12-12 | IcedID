@@ -1,0 +1,74 @@
+IcedID "814709416" | HTML Attachments | "ewgahskoot" | 12 December 2022
+Sample: https://bazaar.abuse.ch/sample/15e6f81e3e57d8cd9bbbb51c1d9486ea61cd2b17b0fc6288f2cf9f900f4ce985/
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+IcedID
+
+---------------------------------------------------------------
+Threat Actor
+---------------------------------------------------------------
+None specified with confidence
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+IcedID Hash Example:
+ type: payload
+ sha256s:
+ - 5c4061ed08f89eaa12f61842bc2bef83d29a2727a9dcff5d445d6b2fd120cae9
+
+IcedID Loader C2:
+ type: payload
+ domains:
+ - ewgahskoot.com
+
+---------------------------------------------------------------
+Description
+---------------------------------------------------------------
+Messages from various senders which appear to be replies from previous threads containing HTML attachments.
+
+Example Attachment Names:
+
+- buyers_[numbers]_dec-12.html
+- career_[numbers]_dec-12.html
+- ceo_[numbers]_dec-12.html
+- consumption_[numbers]_dec-12.html
+- corp_[numbers]_dec-12.html
+- data_[numbers]_dec-12.html
+- docs_[numbers]_dec-12.html
+- documents_[numbers]_dec-12.html
+- docx_[numbers]_dec-12.html
+- files_[numbers]_dec-12.html
+- import_[numbers]_dec-12.html
+- info_[numbers]_dec-12.html
+- notice_[numbers]_dec-12.html
+- offers_[numbers]_dec-12.html
+- pdf_[numbers]_dec-12.html
+- pptx_[numbers]_dec-12.html
+- prices_[numbers]_dec-12.html
+- production_[numbers]_dec-12.html
+- read_[numbers]_dec-12.html
+- scan_[numbers]_dec-12.html
+- sellers_[numbers]_dec-12.html
+- shipping_[numbers]_dec-12.html
+- work_[numbers]_dec-12.html
+- xlsx_[numbers]_dec-12.html
+- warrant_[numbers]_dec-12.html
+
+These messages contain HTML attachments which use HTML Smuggling to drop a password-protected zip. The zip contains an ISO. The ISO contains a shortcut file which uses a CMD file used to start IcedID.
+
+Example Process Tree:
+<pre>C:\Windows\system32\cmd.exe
+cmd /c C:\Users\Admin\AppData\Local\Temp\Scan_Dec12.lnk
+ 
+C:\Windows\System32\cmd.exe
+"C:\Windows\System32\cmd.exe" /c ragaxe\codXl.cmd YXCX
+ 
+C:\Windows\system32\xcopy.exe
+xcopy  /s /i /e /h ragaxe\offscouring.bin C:\Users\Admin\AppData\Local\Temp\*  
+ 
+C:\Windows\system32\rundll32.exe
+rundll32  C:\Users\Admin\AppData\Local\Temp\offscouring.bin,init</pre>
