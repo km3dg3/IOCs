@@ -1,0 +1,44 @@
+IcedID "3407323965" | Zipped MSI Attachments | "estrabornhot" | 13 December 2022
+Sample: https://bazaar.abuse.ch/sample/7092d744817b17348172c00fe2bc3710794688fe34e200c9c4e7ab6d3ecfda02/
+Sandbox: https://tria.ge/221213-y4rcnaae7x
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+IcedID
+
+---------------------------------------------------------------
+Threat Actor
+---------------------------------------------------------------
+TA551
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+Example IcedID Loader C2:
+ type: payload
+ domains:
+ - estrabornhot.com
+
+---------------------------------------------------------------
+Description
+---------------------------------------------------------------
+Emails appearing to be replies to previous threads containing a password-protected, zipped MSI attachment (password= office13122022). The MSI file is used to start IcedID.
+
+Example Process Tree:
+<pre>C:\Windows\system32\msiexec.exe
+msiexec.exe /I C:\Users\Admin\AppData\Local\Temp\soon_even.msi
+ 
+C:\Windows\system32\msiexec.exe
+C:\Windows\system32\msiexec.exe /V
+ 
+C:\Windows\system32\MsiExec.exe
+C:\Windows\system32\MsiExec.exe -Embedding FCA7345F7429CE96C40F81C1A0DFD971
+ 
+C:\Windows\system32\rundll32.exe
+rundll32.exe "C:\Windows\Installer\MSI699D.tmp",zzzzInvokeManagedCustomActionOutOfProc SfxCA_7105252 1 test.cs!Test.CustomActions.MyAction
+ 
+C:\Windows\System32\rundll32.exe
+"C:\Windows\System32\rundll32.exe" "C:\Users\Admin\AppData\Local\Temp\tmp70DD.dll",init
+ </pre>
