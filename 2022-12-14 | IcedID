@@ -1,0 +1,39 @@
+IcedID "2302411646" | Zip Attachments | "klepdrafooip" | "Zoom Info / Standard Notes" | 14 December 2022
+Sample: https://bazaar.abuse.ch/sample/3402a2fc0b043e196115fa4bef0e85306955bd3a8e465bfb737a48df2b17d6f6/
+Sandbox: https://tria.ge/221214-xcvqbsag52/behavioral3
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+IcedID
+
+---------------------------------------------------------------
+Threat Actor
+---------------------------------------------------------------
+None specified with confidence
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+IcedID Loader C2:
+ type: c2
+ domains:
+ - klepdrafooip.com
+
+IcedID Loader Hash Example:
+ type: payload
+ sha256s:
+ - 591701e6e3ea61f8dfca07849668170ba5086b12022abd157dfb6d81f849e916
+
+---------------------------------------------------------------
+Description
+---------------------------------------------------------------
+Messages with attachment "docs[number].zip" and password "Zoom1222"
+
+These messages contain password-protected zip attachments with an embedded shortcut file used to start IcedID
+
+
+Example Process Tree (LNK):
+<pre>cmd.exe /c start /wait "" "C:\Users\Admin\AppData\Local\Temp\DatabaseNDA-14310.lNK"
+rundll32.exe "C:\Windows\System32\rundll32.exe" desktop.ini,init</pre>
