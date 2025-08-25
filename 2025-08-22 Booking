@@ -47,6 +47,24 @@ execute that file quietly with one argument,
 retry via execSync if the clean spawn path fails.
 This JS is used to retrieve and run the final payload.
 
+---- Malware ----
+
+Network Traffic
+
+eth.llamarpc.com
+mainnet.gateway.tenderly.co
+rpc.flashbots.io
+rpc.flashbots.net
+eth-mainnet.public.blastapi.io
+ethereum-rpc.publicnode.com
+rpc.payload.de
+eth.drpc.org
+eth.merkle.io
+C2:
+
+http://185.28.119.179:1234/
+http://185.28.119.179:1234/
+
 
 ---- Reference(s) ----
 
