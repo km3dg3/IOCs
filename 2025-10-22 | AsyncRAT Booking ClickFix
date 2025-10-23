@@ -285,3 +285,69 @@ Dim adminLauncher Set adminLauncher = CreateObject("Shell.Application") adminLau
 
 - https://tria.ge/251023-s2g4bae13h/behavioral2
 - https://x.com/JAMESWT_WT/status/1981032559275278629
+
+---- Analyst Note ----
+
+It is worth noting that the HTA contained Russian comments. This could suggest that the script was generated using AI support.
+
+```
+Инициализация системных объектов
+Initialization of system objects
+
+' Основные пути - теперь в Program Files для легитимности
+' Primary paths are now in Program Files for legitimacy
+
+    ' Проверка маркера выполнения
+' Checking the execution token
+
+    ' Скрытие интерфейса
+'Hiding the interface
+
+    ' Инициализация случайных значений
+' Initialization of random values
+
+    ' Создание рабочей директории в Program Files (будет создана с правами админа)
+'Create a working directory in Program Files (will be created with administrator rights)
+
+    ' Пока просто проверяем существует ли она
+' For now we're just checking if it exists.
+
+        ' Папка будет создана в PowerShell скрипте с правами админа
+' The folder will be created in a PowerShell script with administrator rights.
+
+    ' Определение путей скриптов - временный скрипт в TEMP
+' Defining Script Paths - Temporary Script in TEMP
+
+    ' Обфускация URL компонентов
+' Component URL obfuscation
+
+    ' Создание основного скрипта конфигурации
+'Creating the main configuration script
+
+    ' Блок нейтральных системных операций
+'Neutral System Operations Block
+
+    ' Создание директории в Program Files (требует админ прав)
+'Creating a directory in Program Files (requires admin rights)
+
+    ' Нейтральные системные вызовы
+' Neutral system calls
+
+    ' Конфигурация безопасности системы
+System Security Configuration
+
+    ' Легитимные системные операции
+'Legitimate system operations
+
+    ' Очистка временного скрипта
+' Clearing the temporary script
+
+    ' Дополнительная задержка перед выполнением
+'Additional delay before execution
+
+    ' Запуск с повышенными привилегиями для записи в Program Files
+Run with elevated privileges to write to Program Files
+
+    ' Финальная задержка перед закрытием
+' Final delay before closing
+```
