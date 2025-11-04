@@ -149,43 +149,29 @@ chcp 65001>nul
 ---- IOCs ----
 
 Filtering Redirector:
- type: payload
- urls:
  - https://sageclimb.com/
  - https://spiritripple.com/
- domains:
  - sageclimb.com
  - spiritripple.com
 
 Onedrive Themed Landing:
- type: payload
- urls:
  - https://1drv.global/shared/docs/HR5On71aX
  - https://1drv.global/download.php
- domains:
  - 1drv.global
- ips:
  - 155.138.253.110
- sha256s:
  - 6724de0ce3170ddab6f980085ee31437d904df4a024fb57cae3e02dc0ba98073
 
 TrasnferLoader Traffic:
- type: payload
- urls:
  - dunamis-ethos502-prod-irl1-1c6eda20abd94916.elb.eu-west-1.amazonaws.com
  - https://assetscdn-news.com/getfile
  - https://msdn-global.com/starter.bin
  - https://msdn-global.com/main.bin
- domains:
  - assetscdn-news.com
  - msdn-global.com
- ips:
  - 149.28.234.94
  - 149.28.236.198
 
 404 TDS URLs:
- type: payload
- urls:
  - https://2betsportscenter.com/btx4w
  - https://2betsportscenter.com/izu2q
  - https://2betsportscenter.com/pbu2p
