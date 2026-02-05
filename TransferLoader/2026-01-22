@@ -1,0 +1,268 @@
+# TransferLoader | Search.App and AmazonAWS URLs | "1drv.social" | 22-23 January 2026
+
+## ---- Description ----
+
+Messages with characteristics (Examples):
+
+Subject(s):
+````
+Please review my résumé
+Ready to collaborate on results
+Discover how I can support your team
+A strong skill set for your organization
+How I can support your organization
+Are you open to reviewing a qualified candidate
+Let’s discuss professional alignment
+How I can support your business goals
+A candidate ready to contribute from day one
+How I can contribute to your team’s performance
+Looking for a reliable professional candidate
+Let’s discuss how I can add value to your team
+My experience aligned with your goals
+Seeking a candidate with practical impact
+Curious about a qualified candidate
+Are you looking for a qualified candidate
+Introducing my professional profile
+Please consider my application
+Ready to deliver consistent results
+Ready for a professional conversation
+A motivated professional ready to contribute
+A candidate focused on integrity and results
+Supporting your team with relevant experience
+A practical approach to achieving your goals
+Experience that supports outcomes
+Relevant expertise for your team
+Professional candidate seeking meaningful contribution
+Let’s connect for a professional discussion
+A thoughtful and analytical candidate
+A professional approach to hiring
+A professional perspective for your hiring needs
+Interested in a reliable professional
+Together, we can achieve business goals
+Interested in discussing results? let’s connect
+Professional background aligned with your team
+Ready to strengthen your team
+How can my skills support your team
+International experience relevant to your organization
+Interested in a results-focused professional
+Application for your hiring process
+Let’s explore how I can contribute
+Could my experience fit your team’s needs
+Experience demonstrated through work history
+Let’s improve the hiring experience
+````
+
+This message contains LLM-generated content and a link that conditionally redirects to a OneDrive-themed landing page, featuring a button to download a digitally signed executable masquerading as a PDF file named TransferLoader.
+
+key.bat contents
+```
+chcp 65001>nul
+:ag
+@del /F /Q "C:\Users\User\AppData\Local\Temp\MyProfessional_Resume_Updated2026.exe.bin"
+@if exist "C:\Users\User\AppData\Local\Temp\MyProfessional_Resume_Updated2026.exe.bin" @goto ag
+@move /Y "C:\Users\User\AppData\Roaming\tmp\tmp" "C:\Users\User\AppData\Local\Temp\MyProfessional_Resume_Updated2026.pdf"
+@start /B cmd.exe /c "C:\Users\User\AppData\Local\Temp\MyProfessional_Resume_Updated2026.pdf"
+@del /F /Q %0
+
+```
+
+Exe Process Tree
+```
+MyProfessional_Resume_Updated2026.exe.bin 3676 signed TransferLoader
+WerFault.exe signed C:\Windows\system32\WerFault.exe -u -p 3676 -s 1648
+cmd.exe /c %appdata%\tmp\key.bat
+chcp.com 3528 chcp 65001
+cmd.exe cmd.exe /c "C:\Users\Admin\AppData\Local\Temp\MyProfessional_Resume_Updated2026.pdf"
+AcroRd32.exe signed "C:\Users\Admin\AppData\Local\Temp\MyProfessional_Resume_Updated2026.pdf"
+```
+
+## ---- File Details ----
+
+```
+Name: MyProfessional_Resume_Updated2026.exe | File Size: 434424 Byte(s) (424,24 KB)
+SHA256: a4380e9ac13668d4ff6fc30fdc1efcbfba9e6c1d73bbc994dba34bef605086fc
+
+Filename	namer.bin
+File Size	31536 bytes
+File Type	data
+MD5	7d622c9bc1d0ec9ca87dc9c0eb9b03eb
+SHA1	2ba7747e95de0034f215ac35d0efd6c60945c245
+SHA256	0cc7d39c598a9e798f0c1f97d33215d1abcedcbad3dc8692917f29398cff7104
+Retrived from Host	mstiserviceconfig.com
+Retrived from URI	/cb9533b3bef/GMN232aS
+```
+
+## ---- IOC(s) ----
+
+```
+Deceptive Redirector:
+ type: payload
+ urls:
+ - https://fizzquill.com
+ domains:
+ - fizzquill.com
+ ips:
+ - 64.111.93.135
+
+Landing Page:
+ type: payload
+ urls:
+ - https://1drv.social/shared/docs/ZgmIdTrDCh
+ domains:
+ - 1drv.social
+ ips:
+ - 157.230.63.203
+
+Payload Url:
+ type: payload
+ urls:
+ - https://1drv.social/download.php
+ sha256s:
+ - a4380e9ac13668d4ff6fc30fdc1efcbfba9e6c1d73bbc994dba34bef605086fc
+
+TransferLoader Callback:
+ type: payload
+ urls:
+ - https://mstiserviceconfig.com/cb9533b3bef/GMN232aS
+ - https://philacademics.com/MT0AXdt31
+ - https://drivemscdn.net/version.ini
+ - https://drivemscdn.net/token.crt
+ domains:
+ - mstiserviceconfig.com
+ - philacademics.com
+ - drivemscdn.net
+ ips:
+ - 144.202.5.9
+ - 45.9.149.104
+ - 45.9.149.59
+
+URL Examples (Email):
+ type: payload
+ urls:
+ - https://s3.ap-northeast-1.amazonaws.com/get-optimized-files-5ym/ZMWY74Xpqk42LrU/vEhk/eHx4cv
+ - https://s3.ap-northeast-1.amazonaws.com/managed-intelligence-api-wy3l/lckc2BX/dksp/K7odc5N
+ - https://s3.ap-northeast-2.amazonaws.com/reliable-interactive/0xdYYHV/VqU2
+ - https://s3.ap-south-1.amazonaws.com/app-insight-api-gw/tq9kzzIuwOyWa/WDB8MMYQ/uroLbjc
+ - https://s3.ap-southeast-1.amazonaws.com/go-fast-node-ta/V2oI8CQqPKfp/yR6J7
+ - https://s3.ap-southeast-1.amazonaws.com/ventures-content-9v7x/GUHnHMK7x/GYSIIV/blGWVhJT/NXdJKY/V7aV/CjXjO1F1
+ - https://s3.ca-central-1.amazonaws.com/efficient-marketplace/cwaOs/6BO3Ui/wik7Wh/VjRgt
+ - https://s3.ca-central-1.amazonaws.com/international-insight/GwfLmJ8A0z/gIPHhq/2LY28gZ/3WXJjGms/x9WMCrGK
+ - https://s3.ca-central-1.amazonaws.com/web-fast-repository/8IuylbsynEU/FaEfe/OqB3k9/JkL0rAjI/ta1/O9aNuy/FW0k
+ - https://s3.eu-central-1.amazonaws.com/reliable-data/ia0/Hko
+ - https://s3.eu-west-1.amazonaws.com/link-interactive-database/VZe4Gudsept/rmX8S6LX/fBW/wQg/GiMbB7s/MukJ8
+ - https://s3.eu-west-1.amazonaws.com/live-unified-upload-t46/iftOp10na3/EaFgnN6/dD33SAsH/y3UJdu5v/oQWLLC/4z7ws
+ - https://s3.eu-west-2.amazonaws.com/unified-portal-files-cyp/FeiN6H0peFUKPV/5PDg/S9VEy/Sg5iH
+ - https://s3.eu-west-3.amazonaws.com/optimized-network-files-g01/HiK/j4ZDW/UqKCJaCL/WrZHjCE
+ - https://s3.sa-east-1.amazonaws.com/get-creative-archive/pZtw0P/sX4p/DTrF
+ - https://s3.sa-east-1.amazonaws.com/smart-productivity-archive-rsx/KZc4DuJxfLejrB/xkvxvq7t/6QI
+ - https://s3.us-east-1.amazonaws.com/business-insight-gen3/ywrYxIHW/Qms/HMjWo/v8vMr/2018/obMUKVv/hreHit
+ - https://s3.us-east-1.amazonaws.com/streamlined-platform-gen2/QiI/rjr/ugRP6kZS/CXd9M0Ss/13T
+ - https://s3.us-east-2.amazonaws.com/dev-smart-storage/yCQ0d/7BsPl70/1h68htJ/G9oK2cuE/uKkrTBKx
+ - https://s3.us-east-2.amazonaws.com/web-insight-database-17ft/oj7xD/fIGuMe8/6Qnvs/wVTIr/iXpqG6Sd
+ - https://s3.us-west-1.amazonaws.com/new-professional-cdn/LCxgthTh96/PcT05APS/GF9
+ - https://s3.us-west-1.amazonaws.com/professional-upload/K7v/Lqw/qP48K3/tD5AOrrh
+ - https://s3.us-west-2.amazonaws.com/professional-vision/zjZHVDUnCCPJoF/rO3fF/Xo4/Y4icTN
+ - https://s3.us-west-2.amazonaws.com/studio-ap/it3sYldm1knVp/PMkBlA/KVck7Q
+ - https://search.app/1hcu9A5GucEmBh356
+ - https://search.app/1yhzXXM3ahkaip3o8
+ - https://search.app/3eUMvTWdvANQT3Mb6
+ - https://search.app/3f8NPdtMytSEFUSw9
+ - https://search.app/537pJSnDY1X1xBNP6
+ - https://search.app/5KpX195hXtefSHZGA
+ - https://search.app/6B1JTvi9A2DhbdBc8
+ - https://search.app/6LUPj12tW52DrjWDA
+ - https://search.app/7QRtKYnUWHdzWYe7A
+ - https://search.app/7Szc1wesJf2U7SpX7
+ - https://search.app/8SSDZWLrKNgTyhuJ6
+ - https://search.app/8sX7LCNZnpuEHvSX7
+ - https://search.app/96yhZ4A8zLhH5Q8bA
+ - https://search.app/AVQXoe1yeQ69EtrG8
+ - https://search.app/AeEsADycZUZcRSpi9
+ - https://search.app/AgwngYrmW9QdREQG6
+ - https://search.app/BBfBexT6X4fuDs1HA
+ - https://search.app/Bi3YbQCrBiQtUKno8
+ - https://search.app/CJTTDdYJsyN9Kf979
+ - https://search.app/Euu6htS5KX5xX2WH6
+ - https://search.app/F4NvfE7kzLxWRmwVA
+ - https://search.app/F9MGYvkscX8WqnwWA
+ - https://search.app/FaNeXQ86fZxkgb1N9
+ - https://search.app/FedEJUcuzbKsZZVz8
+ - https://search.app/FydpxftcMZzdLnkaA
+ - https://search.app/GKFGv74W1Cpb1B9LA
+ - https://search.app/GZhJk9sEiobQtdoX9
+ - https://search.app/He8Eiv1ki4zyLmUq7
+ - https://search.app/HnRCuUbMZt4CJbNY7
+ - https://search.app/J6fUHPEwJQ3eGyne9
+ - https://search.app/JUYjNhXdfMNacJX48
+ - https://search.app/JdQrkE8WaixFXHDr8
+ - https://search.app/K9h4VrfL1Gukibns7
+ - https://search.app/KyhjYCcDj5BW7UTo7
+ - https://search.app/LG7rkfyiQfk8NTQt8
+ - https://search.app/LesFbPf3e5Yc1y1H8
+ - https://search.app/LtMeYVM1LTu6K8ew8
+ - https://search.app/LxVPoKj6PDKgZy3K8
+ - https://search.app/N6gvVtwRBh5A8F7p8
+ - https://search.app/NdJEWQJySNmwCJGh8
+ - https://search.app/PPV4jJCaEzPFz7qj7
+ - https://search.app/PaqE3SqeJ1PpnS7E9
+ - https://search.app/Pkr7GbC21mXE3tvF6
+ - https://search.app/PzW8fbEKYFnpKHkw8
+ - https://search.app/QMPcwDMnk8cwSkaB9
+ - https://search.app/QojTWZFu3ejeS66t7
+ - https://search.app/RccVvjPH7jTxzWu97
+ - https://search.app/SQLeKPQGUrbU1NJt7
+ - https://search.app/Syayju7MrJVuUQTK7
+ - https://search.app/TJgtZyXRRQb9amXd7
+ - https://search.app/TnoyL3F7ymbSiTteA
+ - https://search.app/ToCqTwn3V9FJEpfP9
+ - https://search.app/UFjK5XkCeSvGoCwU8
+ - https://search.app/UoxtqxfY7Q9kVmHFA
+ - https://search.app/VXXS9dUDBJaJ6P9BA
+ - https://search.app/XsgyZbTAEGHJj3aG7
+ - https://search.app/YciKE5M3RGTi9LnHA
+ - https://search.app/Z5tzMk7qF5iVz4cq7
+ - https://search.app/a3E2QFtsfHoA8KvX8
+ - https://search.app/aa7tsD1ycy4bF1Ku9
+ - https://search.app/asbiJzmPRhnTu2ro9
+ - https://search.app/bD98Ki2FpGNwTGKEA
+ - https://search.app/c7pG2hru5qHZqS7MA
+ - https://search.app/cBejzw9VZwdeGn9FA
+ - https://search.app/ceAzxF7u5zdWSoBn7
+ - https://search.app/dk1fG4WNmdcFnAMMA
+ - https://search.app/dvhanAGWVr9CWy7A7
+ - https://search.app/fwX26n6AJGJcoAJXA
+ - https://search.app/g849oyhcyxa84ESj7
+ - https://search.app/gnCac2u6X9TrUUeu8
+ - https://search.app/hKsmnBckcthbxiYt6
+ - https://search.app/hWc1Hz45qMfHrmXK8
+ - https://search.app/hb89NdnruQR1HdoE8
+ - https://search.app/hdDGkYWvxVJMchWR7
+ - https://search.app/inCzXW5hDaYN6Xdw7
+ - https://search.app/j91EZGo5zxFCmUGr6
+ - https://search.app/kgccEBP6QxsqUVNU9
+ - https://search.app/kwbUE5tU3rJEGiJY6
+ - https://search.app/m6nETqjPREp6crJC8
+ - https://search.app/mAfBqJE8FUgibQDv6
+ - https://search.app/mZHHQUSMZqUrVTsaA
+ - https://search.app/oixeWs2BHf15Suq77
+ - https://search.app/pgzpQnNSCNkpMdFs5
+ - https://search.app/q5xtid2y79N6pVhd9
+ - https://search.app/qMNGbG15wjV4sW2n8
+ - https://search.app/qh9eVeKhd9k44Xmu5
+ - https://search.app/qsmiED2iHgN4KrnA7
+ - https://search.app/tEqxBmRsJbRnx5YZ6
+ - https://search.app/tMw2HwEHKf5x38Ej7
+ - https://search.app/tiKqcYPVh1RrU5Sd9
+ - https://search.app/tpmhPbW978FTJ78z9
+ - https://search.app/vJf7DyoSMKqkRRLZ7
+ - https://search.app/w1CJgnqNwJ4GMrfG8
+ - https://search.app/wQWbt8F53ZsVmszWA
+ - https://search.app/wmM3k6YBMnnMfiFq5
+ - https://search.app/xJqkWSRpAWaBX2vx6
+ - https://search.app/xK8P5cCGLwPbTwRp7
+ - https://search.app/yienPGFGfk7HVDhG8
+ - https://search.app/zaRTZHUNE8ebkPrK6
+ - https://search.app/zyoXoamqgH72GZYV8
+ ```
+
+## ---- Reference(s) ----
